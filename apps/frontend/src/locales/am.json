@@ -1,4 +1,132 @@
 {
+  "landingPage": {
+    "heroPhrase1": "አግሮLink",
+    "heroPhrase2": "የገበሬው ምርጥ አጋር",
+    "heroSubtext": "የኢትዮጵያ ገበሬዎችን በቴክኖሎጂ እና በፈጠራ ማጎልበት",
+    "getStarted": "ይጀምሩ →",
+    "servicesTitle": "የእኛ አገልግሎቶች",
+    "connectBuyers": {
+      "title": "ገዢዎችን እና ገበሬዎችን ያገናኙ",
+      "description": "አማላጆችን በማስወገድ ቀጥተኛ የገበያ ቦታ። ገበሬዎች ፍትሃዊ ዋጋ ያገኛሉ፣ ገዢዎችም ትኩስ ምርትን በቀጥታ ከምንጩ ያገኛሉ።"
+    },
+    "aiDetection": {
+      "title": "የሰብል በሽታን በAI ማወቅ",
+      "description": "ከዕፅዋት ፎቶዎች ፈጣን ምርመራ። ጉዳቱ ከመስፋፋቱ በፊት ሰብልዎን ለማዳን የህክምና እቅዶችን ያግኙ።"
+    },
+    "advisor": {
+      "title": "24/7 የእርሻ አማካሪ",
+      "description": "በኪስዎ ውስጥ ምናባዊ የግብርና ባለሙያ። በአፈር ጤና፣ በተባይ መቆጣጠሪያ እና በሰብል ዑደቶች ላይ በግል የተበጀ ምክር በአማርኛ ወይም በኦሮምኛ ያግኙ።"
+    },
+    "weather": {
+      "title": "የአካባቢ የአየር ሁኔታ ማንቂያዎች እና ትንበያ",
+      "description": "ለእርስዎ ትክክለኛ ቦታ ትክክለኛ ትንበያዎችን እና የወደፊት ትንበያዎችን። የአፈር እርጥበት ትንተናም እናቀርባለን።"
+    },
+    "learnMore": "ተጨማሪ ይወቁ",
+    "signUp": "ይመዝገቡ",
+    "appName": "አግሮLink"
+  },
+  "testimonials": {
+    "title": "ገበሬዎች ምን ይላሉ",
+    "subtitle": "ከሺዎች የሚቆጠሩ ገበሬዎች ከመድረካችን ጋር የእርሻ ልምዶቻቸውን የቀየሩ ይቀላቀሉ።",
+    "abebe": {
+      "name": "አበበ",
+      "role": "ገበሬ፣ ደቡብ ወሎ",
+      "quote": "የ AI መለያ እና የባለሙያ ምክር በመጠቀም የሰብሌን ምርት 40% ጨምራለሁ።"
+    },
+    "kebed": {
+      "name": "ከበድ",
+      "role": "የቻይ ፋርማ ባለቤት፣ ጋምቤላ",
+      "quote": "ገበያው ከዓለም አቀፍ ገዢዎች ጋር በቀጥታ አገናኘኝ።"
+    },
+    "shemsu": {
+      "name": "ሸምሱ",
+      "role": "የወተት እና የሰብል ገበሬ፣ ሲዳማ",
+      "quote": "የአየር ሁኔታ ትንበያዎች ሰብሎቼን ከማያልቅ የዝናብ ማዕበል አዳኑ።"
+    }
+  },
+  "faq": {
+    "title": "በተደጋጋሚ የሚጠየቁ ጥያቄዎች",
+    "cropDetection": {
+      "question": "የ AI የሰብል መለያ እንዴት ይሠራል?",
+      "answer": "የእኛ AI የሳተላይት ምስሎችን እና የማሽን ትምህርትን በመጠቀም የሰብል ጤና ችግሮችን፣ ተባዮችን እና በሽታዎችን በ95% ትክክለኛነት ይለያል።"
+    },
+    "connectFarmers": {
+      "question": "ገበሬዎችን ከገዢዎች ጋር እንዴት ትገናኛላችሁ?",
+      "answer": "መድረካችን ሁለቱንም ገበሬዎች እና ገዢዎች ያረጋግጣል፣ ቀጥተኛ ግንኙነት ያመቻቻል እና በገበያ ትንታኔ ፍትሃዊ የዋጋ አሰጣጥ ያረጋግጣል።"
+    },
+    "supportedCrops": {
+      "question": "ምን ዓይነት ሰብሎችን ትደግፋላችሁ?",
+      "answer": "ሁሉንም ዋና ዋና ሰብሎች ማለትም ሩዝ፣ ስንዴ፣ ጥጥ፣ ፍራፍሬዎች፣ አትክልቶች እና ልዩ ሰብሎች በተለያዩ ክልሎች እንደግፋለን።"
+    }
+  },
+  "stats": {
+    "farmersEmpowered": "የተረጋገ ገበሬዎች",
+    "cropsProtected": "የተጠበቁ ሰብሎች",
+    "yieldIncrease": "አማካይ የምርት ጭማሪ",
+    "satisfaction": "የገበሬ እርካታ"
+  },
+  "about": {
+    "title": "በቴክኖሎጂ ግብርናን ማደስ",
+    "description": "ባህላዊ የእርሻ ልምዶችን የሚቀይሩ ዘመናዊ ቴክኖሎጂዎችን በመጠቀም ገበሬዎችን ማጎልበት ቃል ገብተናል። መድረካችን AI፣ የውሂብ ትንተና እና የግብርና ሙያዊ እውቀትን በማጣመር ለዘመናዊ ገበሬ ዘላቂ መፍትሄዎችን ይፈጥራል።",
+    "mission": "በ2025 ቴክኖሎጂ እና ግብርናን ለማገናኘት በተሰጠ ተልዕኮ ተመሠርቷል",
+    "serviceArea": "በመላው ኢትዮጵያ ለገበሬዎች አገልግሎት ይሰጣል",
+    "innovationAlt": "የእርሻ ፈጠራ",
+    "sustainabilityAlt": "ዘላቂ እርሻ"
+  },
+  "contact": {
+    "title": "ያግኙን",
+    "description": "ስለ መድረካችን ጥያቄዎች አሉዎት? ቡድናችን ለመጀመር እና ማንኛውንም ጥያቄ ለመመለስ እዚህ አለ።",
+    "email": "ኢሜይል",
+    "phone": "ስልክ",
+    "office": "ቢሮ",
+    "emailSubtitle": "በ24 ሰዓት ውስጥ እንመልሳለን",
+    "phoneSubtitle": "ሰኞ-አርብ ከጧት 9 ሰዓት እስከ ማታ 6 ሰዓት",
+    "officeSubtitle": "የግብርና ፈጠራ ፓርክ፣ ኢትዮጵያ",
+    "sendMessage": "መልእክት ላክ",
+    "form": {
+      "firstName": "ስም",
+      "lastName": "የአባት ስም",
+      "email": "ኢሜይል",
+      "subject": "ርዕስ",
+      "message": "መልእክት",
+      "firstNamePlaceholder": "አበበ",
+      "lastNamePlaceholder": "ከበደ",
+      "emailPlaceholder": "abebe@example.com",
+      "subjectPlaceholder": "እንዴት ልንርዳችሁ እንችላለን?",
+      "messagePlaceholder": "ስለ እርሻ ፍላጎቶችዎ ይንገሩን..."
+    }
+  },
+  "cta": {
+    "title": "እርሻዎን ለመቀየር ዝግጁ ነዎት?",
+    "description": "ከሺዎች የሚቆጠሩ ገበሬዎች ከ AI የሚመነጭ መድረካችን ጋር ምርታቸውን እና ትርፋቸውን እየጨመሩ ናቸው።",
+    "startButton": "ይጀምሩ",
+    "demoButton": "ዲሞ ያዝዙ"
+  },
+  "footer": {
+    "description": "ገበሬዎችን በ AI ቴክኖሎጂ ለዘላቂ ግብርና ማጎልበት።",
+    "product": "ምርት",
+    "company": "ኩባንያ",
+    "support": "ድጋፍ",
+    "features": "ባህሪያት",
+    "pricing": "የዋጋ አሰጣጥ",
+    "caseStudies": "የጉዳይ ጥናቶች",
+    "updates": "ዝመናዎች",
+    "about": "ስለ እኛ",
+    "careers": "ሥራዎች",
+    "blog": "ብሎግ",
+    "press": "ፕሬስ",
+    "helpCenter": "የእርዳታ ማዕከል",
+    "contact": "አግኙን",
+    "documentation": "ሰነዶች",
+    "apiStatus": "API ሁኔታ",
+    "copyright": "© 2025 አግሮLink. ሁሉም መብቶች የተጠበቁ ናቸው።"
+  },
+  "social": {
+    "facebook": "ፌስቡክ",
+    "twitter": "ትዊተር",
+    "linkedin": "ሊንክዲን",
+    "instagram": "ኢንስታግራም"
+  },
   "postProduct": {
     "title": "የምርት ማሳወቂያ",
     "productName": "የምርት ስም",
@@ -14,7 +142,6 @@
   "nav": {
     "weather": "አየር ሁኔታ",
     "settings": "ቅንብሮች",
-
     "about us": "ስለ እኛ",
     "contact": "ያግኙን",
     "home": "መነሻ",
@@ -105,10 +232,25 @@
     "createAccount": "መለያዎን ይፍጠሩ",
     "alreadyAccount": "አካውንት አለዎት?",
     "loginHere": "እዚህ ይግቡ",
-    "registrationSuccess": "መለያዎት በተሳካ ሁኔታ ተመዝግቧል",
+    "registrationSuccess": "መለያዎ በተሳካ ሁኔታ ተመዝግቧል",
     "registrationFailed": "የመመዝገቢያ ሂደት አልተሳካም",
     "networkError": "የኔትዎርክ ስህተት",
-    "unknownError": "ያልታወቀ ስህተት"
+    "unknownError": "ያልታወቀ ስህተት",
+    "sendOtpMessage": "የ OTP መልእክት ወደ ስልክ ቁጥርዎ ተልኳል። እባክዎ ለማረጋገጥ ከታች ያስገቡት።",
+    "enterOtpLabel": "የማረጋገጫ ኮድ ያስገቡ",
+    "verifyButton": "አረጋግጥ እና መለያ ፍጠር",
+    "otpError": "ትክክለኛ ያልሆነ ወይም ጊዜ ያለፈበት OTP።",
+    "bannerTitle": "አግሮLink ን ይቀላቀሉ",
+    "bannerDescription": "ከኢትዮጵያ የእርሻ ማህበረሰብ ጋር ይገናኙ። ገበያዎችን፣ ሀብቶችን እና መሳሪያዎችን ይድረሱ።",
+    "appTitle": "አግሮLink",
+    "formDescription": "በደቂቃዎች ውስጥ መለያዎን ይፍጠሩ",
+    "roleLabel": "እኔ",
+    "processing": "በሂደት ላይ...",
+    "continue": "ይቀጥሉ",
+    "verifyPhoneTitle": "ስልክ ቁጥርዎን ያረጋግጡ",
+    "sentOtpMessage": "ባለ 6 አሃዝ ኮድ ወደ",
+    "didntReceive": "ኮዱን አልደረሰዎትም?",
+    "resend": "እንደገና ላክ"
   },
   "forgotPassword": {
     "title": "የይለፍ ቃል ረስተዋል?",
@@ -132,9 +274,6 @@
     "confirmPasswordPlaceholder": "የይለፍ ቃልዎን ያረጋግጡ",
     "button": "የይለፍ ቃል ዳግመኛ አድርግ"
   },
-  "footer": {
-    "copyright": "© 2025 አግሮLink. ሁሉም መብቶች የተጠበቁ ናቸው።"
-  },
   "product": {
     "list": {
       "title": "ትኩስ እና ኦርጋኒክ ምርቶች",
@@ -154,11 +293,11 @@
       "inStock": "በክምችት ውስጥ",
       "addToCart": "ወደ ጋሪ አክል",
       "farmerInfo": "የገበሬ መረጃ",
-    "noFarmerInfo": "የገበሬ መረጃ አልተገኘም።",
-    "noFarmerDescription": "ገበሬው ምንም መግለጫ አልሰጠም።",
-     "unknownFarmer": "ያልታወቀ ገበሬ",
-  "farmerDescription": "ይህ ምርት በታመነ አካባቢ ገበሬ ተዘጋጅቷል።",
-  "info":"የገበሬ መረጃ"
+      "noFarmerInfo": "የገበሬ መረጃ አልተገኘም።",
+      "noFarmerDescription": "ገበሬው ምንም መግለጫ አልሰጠም።",
+      "unknownFarmer": "ያልታወቀ ገበሬ",
+      "farmerDescription": "ይህ ምርት በታመነ አካባቢ ገበሬ ተዘጋጅቷል።",
+      "info": "የገበሬ መረጃ"
     }
   },
   "productList": {
@@ -175,71 +314,7 @@
     "addedToCart": "ወደ ጋሪ ታክሏል",
     "addToCart": "ወደ ጋሪ ጨምር",
     "farmer": "ገበሬ",
-"phone": "ስልክ"
-
-  },
-  "signUp": {
-    "title": "አግሮLink",
-    "description": "ከማህበሩ ጋር ለመገናኘት ይመዝገቡ።",
-    "nameLabel": "ሙሉ ስም",
-    "namePlaceholder": "ሙሉ ስምዎን ያስገቡ",
-    "phoneLabel": "ስልክ ቁጥር",
-    "phonePlaceholder": "ለምሳሌ፣ +251912345678",
-    "emailLabel": "የኢሜል አድራሻ (አማራጭ)",
-    "emailPlaceholder": "ለምሳሌ፣ you@example.com",
-    "passwordLabel": "የይለፍ ቃል",
-    "passwordPlaceholder": "የይለፍ ቃልዎን ያስገቡ",
-    "roleSelect": "ሚናዎትን ይምረጡ",
-    "roleFarmer": "ገበሬ",
-    "roleBuyer": "ገዢ",
-    "createAccount": "መለያዎን ይፍጠሩ",
-    "alreadyAccount": "አካውንት አለዎት?",
-    "loginHere": "እዚህ ይግቡ",
-    "registrationSuccess": "መለያዎ በተሳካ ሁኔታ ተመዝግቧል",
-    "registrationFailed": "የመመዝገቢያ ሂደት አልተሳካም",
-    "networkError": "የኔትዎርክ ስህተት",
-    "unknownError": "ያልታወቀ ስህተት",
-    "sendOtpMessage": "የ OTP መልእክት ወደ ስልክ ቁጥርዎ ተልኳል። እባክዎ ለማረጋገጥ ከታች ያስገቡት።",
-    "enterOtpLabel": "የማረጋገጫ ኮድ ያስገቡ",
-    "verifyButton": "አረጋግጥ እና መለያ ፍጠር",
-    "otpError": "ትክክለኛ ያልሆነ ወይም ጊዜ ያለፈበት OTP።",
-    "bannerTitle": "አግሮLink ን ይቀላቀሉ",
-    "bannerDescription": "ከኢትዮጵያ የእርሻ ማህበረሰብ ጋር ይገናኙ። ገበያዎችን፣ ሀብቶችን እና መሳሪያዎችን ይድረሱ።",
-    "appTitle": "አግሮLink",
-    "formDescription": "በደቂቃዎች ውስጥ መለያዎን ይፍጠሩ",
-    "roleLabel": "እኔ",
-    "processing": "በሂደት ላይ...",
-    "continue": "ይቀጥሉ",
-    "verifyPhoneTitle": "ስልክ ቁጥርዎን ያረጋግጡ",
-    "sentOtpMessage": "ባለ 6 አሃዝ ኮድ ወደ",
-    "didntReceive": "ኮዱን አልደረሰዎትም?",
-    "resend": "እንደገና ላክ"
-  },
-  "landingPage": {
-    "heroPhrase1": "አግሮLink",
-    "heroPhrase2": "የገበሬው ምርጥ አጋር",
-    "heroSubtext": "የገበሬው ምርጥ አጋር",
-    "getStarted": "ይጀምሩ →",
-    "soil-adviceTitle": "አገልግሎቶች",
-    "connectBuyers": {
-      "title": "ገዢዎችን እና ገበሬዎችን ያገናኙ",
-      "description": "አማላጆችን በማስወገድ ቀጥተኛ የገበያ ቦታ። ገበሬዎች ፍትሃዊ ዋጋ ያገኛሉ፣ ገዢዎችም ትኩስ ምርትን በቀጥታ ከምንጩ ያገኛሉ።"
-    },
-    "aiDetection": {
-      "title": "የሰብል በሽታን በAI ማወቅ",
-      "description": "ከዕፅዋት ፎቶዎች ፈጣን ምርመራ። ጉዳቱ ከመስፋፋቱ በፊት ሰብልዎን ለማዳን የህክምና እቅዶችን ያግኙ።"
-    },
-    "advisor": {
-      "title": "24/7 የእርሻ አማካሪ",
-      "description": "በኪስዎ ውስጥ ምናባዊ የግብርና ባለሙያ። በአፈር ጤና፣ በተባይ መቆጣጠሪያ እና በሰብል ዑደቶች ላይ በግል የተበጀ ምክር በአማርኛ ወይም በኦሮምኛ ያግኙ።"
-    },
-    "weather": {
-      "title": "የአካባቢ የአየር ሁኔታ ማንቂያዎች እና ትንበያ",
-      "description": "ለእርስዎ ትክክለኛ ቦታ ትክክለኛ ትንበያዎችን እና የወደፊት ትንበያዎችን። የአፈር እርጥበት ትንተናም እናቀርባለን።"
-    },
-    "learnMore": "ተጨማሪ ይወቁ",
-    "signUp": "ይመዝገቡ",
-    "appName": "አግሮLink"
+    "phone": "ስልክ"
   },
   "weatherAdvice": {
     "geolocationNotSupported": "የአካባቢ አገልግሎቶች በዚህ አሳሽ ላይ አይደገፍም።",
@@ -275,7 +350,7 @@
     "itemPerItem": "ለእያንዳንዱ ዕቃ",
     "chapaPaymentMessage": "ወደ ቻፓ ክፍያ በመሄድ ላይ። የእርስዎ የባክኤንድ ክፍያውን ይቆጣጠራል።"
   },
-  "addToCart": "ወደ ጋሪ ጨምር.",
+  "addToCart": "ወደ ጋሪ ጨምር",
   "dashboard": {
     "welcomeTitle": "🌱 ወደ አግሮሊንክ እንኳን ደህና መጡ",
     "descriptionPart1": "አግሮሊንክ ዘመናዊ የግብርና ረዳትዎ ነው። ምርታማነትን፣ የውሳኔ አሰጣጥን እና የገበያ ተደራሽነትን ለማሻሻል አርሶ አደሮችን፣ ገዥዎችን እና ባለሙያዎችን በአንድ መድረክ ላይ እናገናኛለን።",

@@ -10,7 +10,6 @@ import farmer1 from '../assets/images/farmer1.png'
 import farmer2 from '../assets/images/farmer2.png'
 import farmer3 from '../assets/images/farmer3.png'
 
-
 const LandingPage = () => {
   const { t } = useTranslation();
   const phrases = [
@@ -74,67 +73,99 @@ const LandingPage = () => {
 
   const testimonials = [
     {
-      name: "Abebe",
-      role: "Farmer, debub wolo",
+      name: t('testimonials.abebe.name'),
+      role: t('testimonials.abebe.role'),
       avatar: farmer1,
-      quote: "Increased my crop yield by 40% using AI detection and expert advice."
+      quote: t('testimonials.abebe.quote')
     },
     {
-      name: "Kebed",
-      role: "Tea Plantation Owner, gambela",
+      name: t('testimonials.kebed.name'),
+      role: t('testimonials.kebed.role'),
       avatar: farmer2,
-      quote: "The marketplace connected me with international buyers directly."
+      quote: t('testimonials.kebed.quote')
     },
     {
-      name: "Shemsu",
-      role: "Dairy & Crop Farmer, Sidama",
+      name: t('testimonials.shemsu.name'),
+      role: t('testimonials.shemsu.role'),
       avatar: farmer3,
-      quote: "Weather predictions saved my crops from unexpected monsoon rains."
+      quote: t('testimonials.shemsu.quote')
     }
   ];
 
   const faqItems = [
     {
-      question: "How does the AI crop detection work?",
-      answer: "Our AI uses satellite imagery and machine learning to identify crop health issues, pests, and diseases with 95% accuracy."
-    },
-  
-    {
-      question: "How do you connect farmers with buyers?",
-      answer: "Our platform verifies both farmers and buyers, facilitates direct communication, and ensures fair pricing through market analytics."
+      question: t('faq.cropDetection.question'),
+      answer: t('faq.cropDetection.answer')
     },
     {
-      question: "What crops do you support?",
-      answer: "We support all major crops including rice, wheat, cotton, fruits, vegetables, and specialty crops across different regions."
+      question: t('faq.connectFarmers.question'),
+      answer: t('faq.connectFarmers.answer')
+    },
+    {
+      question: t('faq.supportedCrops.question'),
+      answer: t('faq.supportedCrops.answer')
     }
   ];
 
-  const teamMembers = [
+  const stats = [
+    { number: "50K+", label: t('stats.farmersEmpowered') },
+    { number: "125K+", label: t('stats.cropsProtected') },
+    { number: "30%", label: t('stats.yieldIncrease') },
+    { number: "98%", label: t('stats.satisfaction') }
+  ];
+
+  const contactInfo = [
     {
-      name: "Dr. Ananya Singh",
-      role: "Agricultural Scientist",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face",
-      bio: "PhD in Agricultural Technology with 15 years of experience in crop science."
+      icon: "📧",
+      title: t('contact.email'),
+      content: "hello@agroLink.com",
+      subtitle: t('contact.emailSubtitle', "We'll respond within 24 hours")
     },
     {
-      name: "Vikram Mehta",
-      role: "AI/ML Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
-      bio: "Former Google AI researcher specializing in computer vision for agriculture."
+      icon: "📞",
+      title: t('contact.phone'),
+      content: "+251 912 34 56 78",
+      subtitle: t('contact.phoneSubtitle', "Mon-Fri from 9am to 6pm")
     },
     {
-      name: "Sneha Reddy",
-      role: "Business Development",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
-      bio: "10+ years in agricultural supply chain and market development."
+      icon: "📍",
+      title: t('contact.office'),
+      content: "123 Farm Tech Avenue",
+      subtitle: t('contact.officeSubtitle', "Agricultural Innovation Park, Ethiopia")
     }
   ];
 
+ const footerColumns = [
+  {
+    title: t('footer.product'),
+    links: [
+      t('footer.features'),
+      t('footer.pricing'),
+      t('footer.caseStudies'),
+      t('footer.updates')
+    ]
+  },
+  {
+    title: t('footer.company'),
+    links: [
+      t('footer.about'),
+      t('footer.careers'),
+      t('footer.blog'),
+      t('footer.press')
+    ]
+  },
+  {
+    title: t('footer.support'),
+    links: [
+      t('footer.helpCenter'),
+      t('footer.contact'),
+      t('footer.documentation'),
+      t('footer.apiStatus')
+    ]
+  }
+];
   return (
     <div className="bg-gray-950 text-white font-sans overflow-x-hidden">
-      {/* Enhanced Header/Navigation */}
-   
-
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <video 
@@ -157,9 +188,7 @@ const LandingPage = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10 font-light max-w-4xl mx-auto">
-            <span>
-              {t('landingPage.heroSubtext')}
-            </span>
+            {t('landingPage.heroSubtext')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -173,7 +202,7 @@ const LandingPage = () => {
               href="#services"
               className="inline-block py-4 px-12 text-lg font-semibold border border-white/30 text-white rounded-full hover:bg-white/10 transition-all duration-500 hover:shadow-2xl"
             >
-              Learn More
+              {t('landingPage.learnMore')}
             </a>
           </div>
         </div>
@@ -190,12 +219,7 @@ const LandingPage = () => {
       <section className="py-12 bg-gray-900 border-y border-gray-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: "50K+", label: "Farmers Empowered" },
-              { number: "125K+", label: "Crops Protected" },
-              { number: "30%", label: "Average Yield Increase" },
-              { number: "98%", label: "Farmer Satisfaction" }
-            ].map((stat, index) => (
+            {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">
                   {stat.number}
@@ -278,17 +302,15 @@ const LandingPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Revolutionizing Agriculture with <span className="text-green-400">Technology</span>
+                {t('about.title')}
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                We are committed to empowering farmers with cutting-edge technology that transforms traditional farming practices. Our platform combines AI, data analytics, and agricultural expertise to create sustainable solutions for the modern farmer.
+                {t('about.description')}
               </p>
               <div className="space-y-4">
                 {[
-                  "Founded in 2018 with a mission to bridge technology and agriculture",
-                  "Serving farmers across 15+ countries worldwide",
-                  "Partnerships with agricultural universities and research institutions",
-                  "ISO 9001 certified for quality management systems"
+                  t('about.mission'),
+                  t('about.serviceArea')
                 ].map((item, index) => (
                   <div key={index} className="flex items-center">
                     <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
@@ -300,29 +322,16 @@ const LandingPage = () => {
             <div className="grid grid-cols-2 gap-4">
               <img 
                 src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500&h=300&fit=crop" 
-                alt="Farm Innovation" 
+                alt={t('about.innovationAlt')} 
                 className="rounded-2xl h-48 object-cover"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?w=500&h=300&fit=crop" 
-                alt="Technology in Agriculture" 
-                className="rounded-2xl h-48 object-cover mt-8"
               />
               <img 
                 src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=300&fit=crop" 
-                alt="Sustainable Farming" 
+                alt={t('about.sustainabilityAlt')} 
                 className="rounded-2xl h-48 object-cover"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1500384066616-8a8d547abfc9?w=500&h=300&fit=crop" 
-                alt="Farm Community" 
-                className="rounded-2xl h-48 object-cover mt-8"
               />
             </div>
           </div>
-
-          {/* Team Section */}
-       
         </div>
       </section>
 
@@ -330,17 +339,17 @@ const LandingPage = () => {
       <section id="testimonials" className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            What Farmers <span className="text-green-400">Say</span>
+            {t('testimonials.title')}
           </h2>
           <p className="text-xl text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-            Join thousands of farmers who have transformed their agricultural practices with our platform.
+            {t('testimonials.subtitle')}
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-gray-800/30 p-8 rounded-3xl border border-gray-700/30 hover:border-green-400/30 transition-all duration-300 group">
                 <div className="flex items-center mb-6">
-                  <img src={testimonial.avatar} alt="" className="w-14 h-14 rounded-full mr-4" />
+                  <img src={testimonial.avatar} alt={testimonial.name} className="w-14 h-14 rounded-full mr-4" />
                   <div>
                     <div className="font-semibold text-lg">{testimonial.name}</div>
                     <div className="text-green-400 text-sm">{testimonial.role}</div>
@@ -364,7 +373,7 @@ const LandingPage = () => {
       <section className="py-24 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4">
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Frequently Asked Questions
+            {t('faq.title')}
           </h3>
           
           <div className="space-y-4">
@@ -386,33 +395,14 @@ const LandingPage = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Get In <span className="text-green-400">Touch</span>
+                {t('contact.title')}
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                Have questions about our platform? Our team is here to help you get started and answer any questions you may have.
+                {t('contact.description')}
               </p>
               
               <div className="space-y-6">
-                {[
-                  {
-                    icon: "📧",
-                    title: "Email",
-                    content: "hello@agroLink.com",
-                    subtitle: "We'll respond within 24 hours"
-                  },
-                  {
-                    icon: "📞",
-                    title: "Phone",
-                    content: "+251 912 34 56 78",
-                    subtitle: "Mon-Fri from 9am to 6pm"
-                  },
-                  {
-                    icon: "📍",
-                    title: "Office",
-                    content: "123 Farm Tech Avenue",
-                    subtitle: "Agricultural Innovation Park, Ethiopia"
-                  }
-                ].map((contact, index) => (
+                {contactInfo.map((contact, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="text-2xl">{contact.icon}</div>
                     <div>
@@ -429,51 +419,61 @@ const LandingPage = () => {
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                      {t('contact.form.firstName')}
+                    </label>
                     <input 
                       type="text" 
                       className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300"
-                      placeholder="John"
+                      placeholder={t('contact.form.firstNamePlaceholder')}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                      {t('contact.form.lastName')}
+                    </label>
                     <input 
                       type="text" 
                       className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300"
-                      placeholder="Doe"
+                      placeholder={t('contact.form.lastNamePlaceholder')}
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    {t('contact.form.email')}
+                  </label>
                   <input 
                     type="email" 
                     className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300"
-                    placeholder="john@example.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    {t('contact.form.subject')}
+                  </label>
                   <input 
                     type="text" 
                     className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300"
-                    placeholder="How can we help?"
+                    placeholder={t('contact.form.subjectPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    {t('contact.form.message')}
+                  </label>
                   <textarea 
                     rows="5"
                     className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300 resize-none"
-                    placeholder="Tell us about your farming needs..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full py-4 px-8 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/25"
                 >
-                  Send Message
+                  {t('contact.sendMessage')}
                 </button>
               </form>
             </div>
@@ -485,10 +485,10 @@ const LandingPage = () => {
       <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-950">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Farming?
+            {t('cta.title')}
           </h3>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of farmers who are already increasing their yields and profits with our AI-powered platform.
+            {t('cta.description')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -496,77 +496,62 @@ const LandingPage = () => {
               to="/sign-up"
               className="inline-block py-4 px-12 text-lg font-semibold bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105"
             >
-              Start 
+              {t('cta.startButton')}
             </Link>
             <Link
               to="/demo"
               className="inline-block py-4 px-12 text-lg font-semibold border border-gray-600 text-gray-300 rounded-full hover:border-green-400 hover:text-green-400 transition-all duration-300"
             >
-              Book a Demo
+              {t('cta.demoButton')}
             </Link>
           </div>
-          
-
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-800 py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <Link to="/" className="flex items-center space-x-2 mb-4">
-                <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">
-                  {t('አግሮLink')}
-                </span>
-              </Link>
-              <p className="text-gray-400 mb-4">
-                Empowering farmers with AI technology for sustainable agriculture.
-              </p>
-              <div className="flex space-x-4">
-                {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                  <a key={social} href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-300">
-                    <span className="sr-only">{social}</span>
-                    {/* Social icons would go here */}
-                  </a>
-                ))}
-              </div>
-            </div>
-            
-            {[
-              {
-                title: "Product",
-                links: ["Features", "Pricing", "Case Studies", "Updates"]
-              },
-              {
-                title: "Company",
-                links: ["About", "Careers", "Blog", "Press"]
-              },
-              {
-                title: "Support",
-                links: ["Help Center", "Contact", "Documentation", "API Status"]
-              }
-            ].map((column, index) => (
-              <div key={index}>
-                <h4 className="font-semibold text-white mb-4">{column.title}</h4>
-                <ul className="space-y-2">
-                  {column.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-300">
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 agroLink Solutions. All rights reserved.</p>
-          </div>
+<footer className="bg-gray-900 border-t border-gray-800 py-12">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="grid md:grid-cols-4 gap-8">
+      <div>
+        <Link to="/" className="flex items-center space-x-2 mb-4">
+          <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">
+            {t('landingPage.appName')}
+          </span>
+        </Link>
+        <p className="text-gray-400 mb-4">
+          {t('footer.description')}
+        </p>
+        <div className="flex space-x-4">
+          {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
+            <a key={social} href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-300">
+              <span className="sr-only">{t(`social.${social}`)}</span>
+              {/* Social icons would go here */}
+            </a>
+          ))}
         </div>
-      </footer>
+      </div>
+      
+      {footerColumns.map((column, index) => (
+        <div key={index}>
+          <h4 className="font-semibold text-white mb-4">{column.title}</h4>
+          <ul className="space-y-2">
+            {column.links.map((link, linkIndex) => (
+              <li key={linkIndex}>
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-300">
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    
+    <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+      <p>{t('footer.copyright')}</p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 };

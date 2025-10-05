@@ -1,4 +1,132 @@
 {
+  "landingPage": {
+    "heroPhrase1": "AgroLink",
+    "heroPhrase2": "Farmer's Best Partner",
+    "heroSubtext": "Empowering Ethiopian farmers with technology and innovation",
+    "getStarted": "Get Started →",
+    "servicesTitle": "Our Services",
+    "connectBuyers": {
+      "title": "Connect Buyers & Farmers",
+      "description": "Direct marketplace eliminating middlemen. Farmers get fair prices, buyers get fresh produce straight from source."
+    },
+    "aiDetection": {
+      "title": "AI Crop Disease Detection",
+      "description": "Instant diagnosis from plant photos. Get treatment plans to save your crops before damage spreads."
+    },
+    "advisor": {
+      "title": "24/7 Farming Advisor",
+      "description": "Virtual agronomist in your pocket. Get personalized advice on soil health, pest control, and crop cycles in Amharic or Oromiffa."
+    },
+    "weather": {
+      "title": "Hyper-Local Weather Alerts & Prediction",
+      "description": "Precision forecasts and future predictions for your exact location. We also offer soil moisture analysis"
+    },
+    "learnMore": "Learn More",
+    "signUp": "Sign Up",
+    "appName": "AgroLink"
+  },
+  "testimonials": {
+    "title": "What Farmers Say",
+    "subtitle": "Join thousands of farmers who have transformed their agricultural practices with our platform.",
+    "abebe": {
+      "name": "Abebe",
+      "role": "Farmer, Debub Wolo",
+      "quote": "Increased my crop yield by 40% using AI detection and expert advice."
+    },
+    "kebed": {
+      "name": "Kebed",
+      "role": "Tea Plantation Owner, Gambela",
+      "quote": "The marketplace connected me with international buyers directly."
+    },
+    "shemsu": {
+      "name": "Shemsu",
+      "role": "Dairy & Crop Farmer, Sidama",
+      "quote": "Weather predictions saved my crops from unexpected monsoon rains."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "cropDetection": {
+      "question": "How does the AI crop detection work?",
+      "answer": "Our AI uses satellite imagery and machine learning to identify crop health issues, pests, and diseases with 95% accuracy."
+    },
+    "connectFarmers": {
+      "question": "How do you connect farmers with buyers?",
+      "answer": "Our platform verifies both farmers and buyers, facilitates direct communication, and ensures fair pricing through market analytics."
+    },
+    "supportedCrops": {
+      "question": "What crops do you support?",
+      "answer": "We support all major crops including rice, wheat, cotton, fruits, vegetables, and specialty crops across different regions."
+    }
+  },
+  "stats": {
+    "farmersEmpowered": "Farmers Empowered",
+    "cropsProtected": "Crops Protected",
+    "yieldIncrease": "Average Yield Increase",
+    "satisfaction": "Farmer Satisfaction"
+  },
+  "about": {
+    "title": "Revolutionizing Agriculture with Technology",
+    "description": "We are committed to empowering farmers with cutting-edge technology that transforms traditional farming practices. Our platform combines AI, data analytics, and agricultural expertise to create sustainable solutions for the modern farmer.",
+    "mission": "Founded in 2025 with a mission to bridge technology and agriculture",
+    "serviceArea": "Serving farmers across Ethiopia",
+    "innovationAlt": "Farm Innovation",
+    "sustainabilityAlt": "Sustainable Farming"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have questions about our platform? Our team is here to help you get started and answer any questions you may have.",
+    "email": "Email",
+    "phone": "Phone",
+    "office": "Office",
+    "emailSubtitle": "We'll respond within 24 hours",
+    "phoneSubtitle": "Mon-Fri from 9am to 6pm",
+    "officeSubtitle": "Agricultural Innovation Park, Ethiopia",
+    "sendMessage": "Send Message",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "firstNamePlaceholder": "Abebe",
+      "lastNamePlaceholder": "Kebede",
+      "emailPlaceholder": "abebe@example.com",
+      "subjectPlaceholder": "How can we help?",
+      "messagePlaceholder": "Tell us about your farming needs..."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Farming?",
+    "description": "Join thousands of farmers who are already increasing their yields and profits with our AI-powered platform.",
+    "startButton": "Start",
+    "demoButton": "Book a Demo"
+  },
+  "footer": {
+    "description": "Empowering farmers with AI technology for sustainable agriculture.",
+    "product": "Product",
+    "company": "Company",
+    "support": "Support",
+    "features": "Features",
+    "pricing": "Pricing",
+    "caseStudies": "Case Studies",
+    "updates": "Updates",
+    "about": "About",
+    "careers": "Careers",
+    "blog": "Blog",
+    "press": "Press",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "documentation": "Documentation",
+    "apiStatus": "API Status",
+    "copyright": "© 2025 AgroLink. All rights reserved."
+  },
+  "social": {
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
   "postProduct": {
     "title": "Post Product",
     "productName": "Product Name",
@@ -21,7 +149,7 @@
     "marketplace": "Marketplace",
     "allProducts": "All Products",
     "products": "Products",
-    "soil-advice": "soil-advice",
+    "soil-advice": "Services",
     "diseaseDetection": "Disease Detection",
     "news": "News",
     "calendar": "Calendar",
@@ -145,9 +273,6 @@
     "confirmPasswordPlaceholder": "Confirm your password",
     "button": "Reset Password"
   },
-  "footer": {
-    "copyright": "© 2025 AgroLink. All rights reserved."
-  },
   "product": {
     "list": {
       "title": "Fresh & Organic Produce",
@@ -167,8 +292,8 @@
       "inStock": "In Stock",
       "addToCart": "Add to Cart",
       "unknownFarmer": "Unknown Farmer",
-  "farmerDescription": "This product is provided by a trusted local farmer.",
-  "info": "info"
+      "farmerDescription": "This product is provided by a trusted local farmer.",
+      "info": "info"
     }
   },
   "cart": {
@@ -191,38 +316,11 @@
     "message": "Your payment has been successfully processed.",
     "backToDashboard": "Back to Dashboard"
   },
-
-  "landingPage": {
-    "heroPhrase1": "አግሮLink",
-    "heroPhrase2": "የገበሬው ምርጥ አጋር",
-    "heroSubtext": "Farmer's Best Partner",
-    "getStarted": "Get Started →",
-    "soil-adviceTitle": "soil-advice",
-    "connectBuyers": {
-      "title": "Connect Buyers & Farmers",
-      "description": "Direct marketplace eliminating middlemen. Farmers get fair prices, buyers get fresh produce straight from source."
-    },
-    "aiDetection": {
-      "title": "AI Crop Disease Detection",
-      "description": "Instant diagnosis from plant photos. Get treatment plans to save your crops before damage spreads."
-    },
-    "advisor": {
-      "title": "24/7 Farming Advisor",
-      "description": "Virtual agronomist in your pocket. Get personalized advice on soil health, pest control, and crop cycles in Amharic or Oromiffa."
-    },
-    "weather": {
-      "title": "Hyper-Local Weather Alerts & Prediction",
-      "description": "Precision forecasts and future predictions for your exact location. We also offer soil moisture analysis"
-    },
-    "learnMore": "Learn More",
-    "signUp": "Sign Up",
-    "appName": "አግሮLink"
-  },
   "weatherAdvice": {
     "geolocationNotSupported": "Geolocation is not supported by your browser.",
     "serverError": "Failed to get advice from server.",
     "fetchError": "An error occurred while fetching advice.",
-    "locationPermissionError": "Unable to retrieve your location. Please ensure location soil-advice are enabled.",
+    "locationPermissionError": "Unable to retrieve your location. Please ensure location services are enabled.",
     "loadingAuth": "Loading authentication...",
     "loginRequiredTitle": "🚫 Login Required",
     "loginRequiredText": "Please log in to access the Agricultural Climate Advisor.",
@@ -260,12 +358,12 @@
   },
   "soil-advicePage": {
     "hero": {
-      "title": "Our soil-advice",
+      "title": "Our Services",
       "subtitle": "Empowering Ethiopian farmers with innovative tools and support for a prosperous future."
     },
     "solutions": {
       "title": "Solutions Designed for You",
-      "description": "We offer a range of digital soil-advice to help you manage your farm, increase productivity, and connect with the market."
+      "description": "We offer a range of digital services to help you manage your farm, increase productivity, and connect with the market."
     },
     "serviceCards": [
       {
@@ -360,4 +458,3 @@
     "notAuthenticated": "You are not authenticated to perform this action."
   }
 }
-

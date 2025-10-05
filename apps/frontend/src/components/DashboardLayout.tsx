@@ -42,7 +42,7 @@ const DashboardLayout: React.FC = () => {
         </header>
 
         {/* Main content - scrollable */}
-        <main className="col-start-2 row-start-2 overflow-auto bg-gray-50 p-6">
+<main className="col-start-2 row-start-2 overflow-auto p-0">
           <Outlet />
         </main>
       </div>
