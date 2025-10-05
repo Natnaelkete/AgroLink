@@ -11,6 +11,10 @@ import cartRoutes from './routes/cart.routes';
 import paymentRoute from './routes/paymentRoute';
 import diseaseDetectionRoute from "./routes/diseaseDetection.route";
 import profileRoute from "./routes/profileRoute"
+import soilRoutes from "./routes/soilRoutes";
+
+
+
 
 const app = express();
 
@@ -30,7 +34,7 @@ app.use("/api/weather-prediction", weatherPredictionRoutes);
 app.use('/api/cart', cartRoutes);
 app.use("/api/diseaseDetection", diseaseDetectionRoute);
 app.use("/api/profile", profileRoute)
-
+app.use("/api/soil", soilRoutes);
 const PORT = 5000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);

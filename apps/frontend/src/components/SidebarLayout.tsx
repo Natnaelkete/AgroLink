@@ -86,17 +86,17 @@ const SidebarLayout: React.FC = () => {
           <span className="font-medium">{t("nav.createProduct")}</span>
         </Link>
 
-        {/* Services Link */}
+        {/* soil-advice Link */}
         <Link
-          to="/services"
+          to="/soil-advice"
           className={`flex items-center gap-3 px-3 py-3 rounded-lg ${transitionClass} ${
-            isActive("/services")
+            isActive("/soil-advice")
               ? `${activeBgClass} shadow-md`
               : `${hoverBgClass}`
           }`}
         >
           <LeafIcon className="w-5 h-5" />
-          <span className="font-medium">{t("nav.services")}</span>
+          <span className="font-medium">{t("nav.soil-advice")}</span>
         </Link>
 
         {/* Disease Detection Link */}

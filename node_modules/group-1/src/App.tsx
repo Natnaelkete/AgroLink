@@ -20,7 +20,7 @@ import Weather from "./components/weather/WeatherAdvice";
 import "./index.css";
 import MainLayout from "./components/MainLayout";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import SoilAdvice from "./pages/SoilAdvice";
 import PaymentSuccessPage from "./components/cart/PaymentSuccessPage";
 import AdviceForm from "./components/advice/DiseaseDetection";
 import FarmerProfile from "./components/profile/FarmerProfile";
@@ -53,7 +53,7 @@ function App() {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/weather-detector" element={<Weather />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/soil-advice" element={<SoilAdvice />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/disease-detection" element={<AdviceForm />} />

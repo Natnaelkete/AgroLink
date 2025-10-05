@@ -21,7 +21,7 @@
     "marketplace": "Marketplace",
     "allProducts": "All Products",
     "products": "Products",
-    "services": "Services",
+    "soil-advice": "soil-advice",
     "diseaseDetection": "Disease Detection",
     "news": "News",
     "calendar": "Calendar",
@@ -197,7 +197,7 @@
     "heroPhrase2": "የገበሬው ምርጥ አጋር",
     "heroSubtext": "Farmer's Best Partner",
     "getStarted": "Get Started →",
-    "servicesTitle": "Services",
+    "soil-adviceTitle": "soil-advice",
     "connectBuyers": {
       "title": "Connect Buyers & Farmers",
       "description": "Direct marketplace eliminating middlemen. Farmers get fair prices, buyers get fresh produce straight from source."
@@ -222,7 +222,7 @@
     "geolocationNotSupported": "Geolocation is not supported by your browser.",
     "serverError": "Failed to get advice from server.",
     "fetchError": "An error occurred while fetching advice.",
-    "locationPermissionError": "Unable to retrieve your location. Please ensure location services are enabled.",
+    "locationPermissionError": "Unable to retrieve your location. Please ensure location soil-advice are enabled.",
     "loadingAuth": "Loading authentication...",
     "loginRequiredTitle": "🚫 Login Required",
     "loginRequiredText": "Please log in to access the Agricultural Climate Advisor.",
@@ -258,14 +258,14 @@
     "farmer": "Farmer",
     "phone": "Phone"
   },
-  "servicesPage": {
+  "soil-advicePage": {
     "hero": {
-      "title": "Our Services",
+      "title": "Our soil-advice",
       "subtitle": "Empowering Ethiopian farmers with innovative tools and support for a prosperous future."
     },
     "solutions": {
       "title": "Solutions Designed for You",
-      "description": "We offer a range of digital services to help you manage your farm, increase productivity, and connect with the market."
+      "description": "We offer a range of digital soil-advice to help you manage your farm, increase productivity, and connect with the market."
     },
     "serviceCards": [
       {

@@ -16,6 +16,8 @@ model User {
   accountNumber           String?
   role                    String
   email                   String?
+    soilReadings            SoilReading[]  
+
   password                String?
   otp                     String?
   otpExpiresAt            DateTime?
@@ -30,6 +32,16 @@ model User {
 
   createdAt               DateTime?   @default(now()) @map("createdAt")
   updatedAt               DateTime?   @updatedAt @map("updatedAt")
+}
+model SoilReading {
+  id                String    @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String
+  user              User      @relation(fields: [userId], references: [id])
+  soilType          String
+  ph                Float
+  nutrients         Json
+  recommendedInputs Json
+  createdAt         DateTime  @default(now())
 }
 
 model Product {
