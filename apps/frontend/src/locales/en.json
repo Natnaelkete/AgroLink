@@ -199,21 +199,32 @@
     "forumDescription": "Connect with other farmers and experts",
     "viewAllResources": "View All Resources"
   },
-  "signIn": {
-    "title": "Sign In",
-    "description": "Sign in to your AgroLink account.",
+"signIn": {
+    "bannerTitle": "Welcome Back",
+    "bannerDescription": "Sign in to access your agricultural marketplace",
+    "appTitle": "AgroLink",
+    "formDescription": "Sign in to your account to continue",
     "phoneLabel": "Phone Number",
     "phonePlaceholder": "Enter your phone number",
     "passwordLabel": "Password",
     "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
     "signInButton": "Sign In",
+    "loginWithOtp": "Or, Sign in with OTP",
+    "loginWithPassword": "Or, Sign in with Password",
+    "sendOtpButton": "Send OTP",
+    "verifyPhoneTitle": "Verify Your Phone",
+    "sentOtpMessage": "We've sent a verification code to",
+    "enterOtpLabel": "Enter OTP",
+    "verifyButton": "Verify OTP",
+    "processing": "Processing...",
+    "verifying": "Verifying...",
+    "didntReceive": "Didn't receive the code?",
+    "resend": "Resend",
     "noAccount": "Don't have an account?",
     "signUpNow": "Sign up now",
-    "loginSuccess": "Successfully logged in",
+    "loginSuccess": "Login successful!",
     "loginFailed": "Login failed",
-    "networkError": "Network error",
-    "unknownError": "Unknown error"
+    "networkError": "Network error, please try again"
   },
   "signUp": {
     "title": "AgroLink",
@@ -455,6 +466,8 @@
     "networkError": "Network error. Please check your connection and try again."
   },
   "auth": {
-    "notAuthenticated": "You are not authenticated to perform this action."
+    "notAuthenticated": "You are not authenticated to perform this action.",
+        "forgotPassword": "Forgot Password?"
+
   }
 }

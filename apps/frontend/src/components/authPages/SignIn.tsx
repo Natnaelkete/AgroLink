@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import agriIcon from '@/assets/images/agriIcon.png'; 
 import { useAuth } from '@/context/AuthContext'; 
 import { useTranslation } from 'react-i18next'; 
+
+const farmImage = "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000";
 
 interface SignInData {
   phoneNumber: string;
@@ -12,6 +13,7 @@ interface SignInData {
 const SignIn: React.FC = () => {
   const { setAuth } = useAuth();
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState<SignInData>({
     phoneNumber: '',
@@ -23,8 +25,6 @@ const SignIn: React.FC = () => {
   const [error, setError] = useState<string>('');
   const [successMessage, setSuccessMessage] = useState<string>('');
 
-  const navigate = useNavigate();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -32,21 +32,23 @@ const SignIn: React.FC = () => {
       [name]: value,
     });
   };
-const handleLoginSuccess = (data: any) => {
+
+  const handleLoginSuccess = (data: any) => {
     setSuccessMessage(t('signIn.loginSuccess') as string);
     localStorage.setItem('authToken', data.token);
     setAuth(data.token, data.userId);
     localStorage.setItem('role', data.role);
     if (data.role === 'super_admin') {
-        navigate('/admin-dashboard'); 
+      navigate('/admin-dashboard'); 
     } else if (data.role === 'farmer') {
-        navigate('/dashboard'); 
+      navigate('/dashboard'); 
     } else if (data.role === 'admin') {
-        navigate('/weather-detector');}
-    else {
-        navigate('/products'); 
+      navigate('/weather-detector');
+    } else {
+      navigate('/products'); 
     }
-};
+  };
+
   const handlePasswordLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
@@ -153,161 +155,316 @@ const handleLoginSuccess = (data: any) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-green-100 p-4">
-      <div className="relative bg-white p-8 md:p-10 rounded-xl shadow-2xl w-full max-w-lg">
-        <img src={agriIcon} alt="AgroTech Logo" className="absolute top-6 left-6 w-20 h-20 p-2" />
-
-        <div className="text-center mb-8">
-          {/* Using translation key for title and description */}
-          <h1 className="text-3xl md:text-4xl font-bold text-green-700">{t('signIn.title')}</h1>
-          <p className="text-gray-600 mt-2">{t('signIn.description')}</p>
+    <div className="min-h-screen flex items-center justify-center p-4 bg-green-50">
+      <div className="flex w-full max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden">
+        {/* Image Section with Green Gradient Overlay */}
+        <div className="hidden lg:flex lg:w-1/2 relative">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${farmImage})` }}
+          />
+          {/* Green gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-800/80 to-green-600/60"></div>
+          <div className="relative z-10 flex flex-col justify-center items-center text-white w-full p-12">
+            <h1 className="text-4xl font-bold mb-4 text-center">
+              {t('signIn.bannerTitle')}
+            </h1>
+            <p className="text-xl text-center max-w-md">
+              {t('signIn.bannerDescription')}
+            </p>
+          </div>
         </div>
 
-        {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-            <span className="block sm:inline">{error}</span>
-          </div>
-        )}
-        {successMessage && (
-          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
-            <span className="block sm:inline">{successMessage}</span>
-          </div>
-        )}
-
-        {loginMethod === 'password' && (
-          <form onSubmit={handlePasswordLogin}>
-            <div className="mb-6">
-              {/* Using translation key for label and placeholder */}
-              <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-800 mb-2">
-                {t('signIn.phoneLabel')}
-              </label>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                placeholder={t('signIn.phonePlaceholder') as string}
-                required
-              />
+        {/* Form Section */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center p-6 md:p-8">
+          <div className="w-full max-w-md">
+            <div className="text-center mb-6">
+              <h1 className="text-3xl font-bold text-green-700">{t('signIn.appTitle')}</h1>
+              <p className="text-gray-600 mt-2 text-sm">
+                {t('signIn.formDescription')}
+              </p>
             </div>
-            <div className="mb-8">
-              <div className="flex justify-between items-center">
-                {/* Using translation key for label */}
-                <label htmlFor="password" className="block text-sm font-medium text-gray-800 mb-2">
-                  {t('signIn.passwordLabel')}
-                </label>
-                {/* Using translation key for forgot password link */}
-                <Link to="/forgot-password" className="text-xs text-green-600 hover:text-green-800 transition-colors duration-300">
-                  {t('auth.forgotPassword')}
-                </Link>
+
+            {error && (
+              <div
+                className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4 text-sm"
+                role="alert"
+              >
+                {error}
               </div>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                placeholder={t('signIn.passwordPlaceholder') as string}
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50"
-              disabled={isLoading}
-            >
-              {/* Using translation key for button text */}
-              {isLoading ? '...' : (t('signIn.signInButton') as string)}
-            </button>
-            <div className="mt-4 text-center">
-              <button
-                type="button"
-                onClick={() => setLoginMethod('otp')}
-                className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors duration-300"
+            )}
+            {successMessage && (
+              <div
+                className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-4 text-sm"
+                role="alert"
               >
-                {/* Hard-coded text to be fixed */}
-                Or, {t('signIn.signInButton')} with OTP
-              </button>
-            </div>
-          </form>
-        )}
+                {successMessage}
+              </div>
+            )}
 
-        {loginMethod === 'otp' && (
-          <form onSubmit={handleRequestOtp}>
-            <div className="mb-6">
-              <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-800 mb-2">
-                {t('signIn.phoneLabel')}
-              </label>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                placeholder={t('signIn.phonePlaceholder') as string}
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50"
-              disabled={isLoading}
-            >
-              {/* Hard-coded text to be fixed */}
-              {isLoading ? '...' : 'Send OTP'}
-            </button>
-            <div className="mt-4 text-center">
-              <button
-                type="button"
-                onClick={() => setLoginMethod('password')}
-                className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors duration-300"
+            {loginMethod === 'password' && (
+              <form onSubmit={handlePasswordLogin} className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    {t('signIn.phoneLabel')}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                    placeholder={t('signIn.phonePlaceholder') as string}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center mb-1">
+                    <label
+                      htmlFor="password"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      {t('signIn.passwordLabel')}
+                    </label>
+                    <Link 
+                      to="/forgot-password" 
+                      className="text-xs text-green-600 hover:text-green-800 transition-colors"
+                    >
+                      {t('auth.forgotPassword')}
+                    </Link>
+                  </div>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                    placeholder={t('signIn.passwordPlaceholder') as string}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-green-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50 mt-2"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <span className="flex items-center justify-center">
+                      <svg
+                        className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      {t('signIn.processing')}
+                    </span>
+                  ) : (
+                    t('signIn.signInButton')
+                  )}
+                </button>
+
+                <div className="text-center mt-4">
+                  <button
+                    type="button"
+                    onClick={() => setLoginMethod('otp')}
+                    className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors"
+                  >
+                    {t('signIn.loginWithOtp')}
+                  </button>
+                </div>
+              </form>
+            )}
+
+            {loginMethod === 'otp' && (
+              <form onSubmit={handleRequestOtp} className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    {t('signIn.phoneLabel')}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                    placeholder={t('signIn.phonePlaceholder') as string}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-green-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50 mt-2"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <span className="flex items-center justify-center">
+                      <svg
+                        className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      {t('signIn.processing')}
+                    </span>
+                  ) : (
+                    t('signIn.sendOtpButton')
+                  )}
+                </button>
+
+                <div className="text-center mt-4">
+                  <button
+                    type="button"
+                    onClick={() => setLoginMethod('password')}
+                    className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors"
+                  >
+                    {t('signIn.loginWithPassword')}
+                  </button>
+                </div>
+              </form>
+            )}
+
+            {loginMethod === 'otpInput' && (
+              <form onSubmit={handleVerifyOtp} className="space-y-5">
+                <div className="text-center">
+                  <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+                    <svg
+                      className="h-6 w-6 text-green-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                  </div>
+                  <h2 className="mt-3 text-xl font-medium text-gray-900">
+                    {t('signIn.verifyPhoneTitle')}
+                  </h2>
+                  <p className="mt-2 text-sm text-gray-600">
+                    {t('signIn.sentOtpMessage')} <span className="font-medium">{formData.phoneNumber}</span>
+                  </p>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="otp"
+                    className="block text-sm font-medium text-gray-700 mb-1 text-center"
+                  >
+                    {t('signIn.enterOtpLabel')}
+                  </label>
+                  <input
+                    type="text"
+                    id="otp"
+                    name="otp"
+                    value={otp}
+                    onChange={(e) => setOtp(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all text-center tracking-widest text-xl font-semibold"
+                    placeholder="000000"
+                    maxLength={6}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-green-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <span className="flex items-center justify-center">
+                      <svg
+                        className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      {t('signIn.verifying')}
+                    </span>
+                  ) : (
+                    t('signIn.verifyButton')
+                  )}
+                </button>
+
+                <div className="text-center text-sm text-gray-600">
+                  {t('signIn.didntReceive')}{' '}
+                  <button
+                    type="button"
+                    className="font-medium text-green-600 hover:text-green-800"
+                  >
+                    {t('signIn.resend')}
+                  </button>
+                </div>
+              </form>
+            )}
+
+            <div className="text-center mt-6 text-sm text-gray-600">
+              {t('signIn.noAccount')}{' '}
+              <Link
+                to="/sign-up"
+                className="font-medium text-green-600 hover:text-green-800 transition-colors"
               >
-                {/* Hard-coded text to be fixed */}
-                Or, {t('signIn.signInButton')} with Password
-              </button>
+                {t('signIn.signUpNow')}
+              </Link>
             </div>
-          </form>
-        )}
-
-        {loginMethod === 'otpInput' && (
-          <form onSubmit={handleVerifyOtp}>
-            <p className="text-center text-gray-600 mb-6">{t('signIn.sendOtpMessage')}</p>
-            <div className="mb-6">
-              <label htmlFor="otp" className="block text-sm font-medium text-gray-800 mb-2">
-                {t('signIn.enterOtpLabel')}
-              </label>
-              <input
-                type="text"
-                id="otp"
-                name="otp"
-                value={otp}
-                onChange={(e) => setOtp(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-center tracking-widest text-xl"
-                placeholder="000000"
-                maxLength={6}
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 disabled:opacity-50"
-              disabled={isLoading}
-            >
-              {/* Hard-coded text to be fixed */}
-              {isLoading ? '...' : 'Verify OTP'}
-            </button>
-          </form>
-        )}
-
-        <div className="text-center mt-6 text-sm text-gray-600">
-          {t('signIn.noAccount')}{' '}
-          <Link to="/sign-up" className="font-medium text-green-600 hover:text-green-800 transition-colors duration-300 ml-1">
-            {t('signIn.signUpNow')}
-          </Link>
+          </div>
         </div>
       </div>
     </div>
