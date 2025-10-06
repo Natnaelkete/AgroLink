@@ -148,7 +148,13 @@
     "settings": "Settings",
     "marketplace": "Marketplace",
     "createProduct": "Sell Product",
-    "cart": "Cart"
+    "cart": "Cart",
+    "soil-advice": "Soil Advice",
+    "diseaseDetection": "Disease Detection",
+    "news": "Agriculture News",
+    "products": "Marketplace",
+    "calendar": "Farming Calendar",
+    "helpCenter": "Help Center"
   },
   "header": {
     "searchPlaceholder": "Search...",

@@ -19,9 +19,9 @@ const DashboardLayout: React.FC = () => {
 
       {/* Grid container */}
       <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] h-screen">
-        {/* Sidebar - fixed on all screens */}
+        {/* Sidebar - spans both rows (full height) */}
         <aside
-          className={`fixed md:relative w-64 bg-white border-r border-gray-200 z-50 md:z-auto transform transition-transform duration-300 ease-in-out ${
+          className={`fixed md:relative w-80 bg-white border-r border-gray-200 z-50 md:z-auto transform transition-transform duration-300 ease-in-out ${
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0 row-span-2 h-screen`}
         >
@@ -36,13 +36,13 @@ const DashboardLayout: React.FC = () => {
           <SidebarLayout />
         </aside>
 
-        {/* Header - fixed */}
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-30 col-span-2 md:col-span-1">
+        {/* Header - only in the main content column */}
+        <header className="bg-white border-b border-gray-200 sticky top-0 z-30 col-start-2 row-start-1">
           <Header onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
         </header>
 
         {/* Main content - scrollable */}
-<main className="col-start-2 row-start-2 overflow-auto p-0">
+        <main className="col-start-2 row-start-2 overflow-auto p-0">
           <Outlet />
         </main>
       </div>

@@ -148,7 +148,14 @@
     "settings": "ቅንብሮች",
     "marketplace": "ገበያ",
     "createProduct": "ምርት ይሽጡ",
-    "cart": "ጋሪ"
+    "cart": "ጋሪ",
+    "soil-advice": "የአፈር ምክር",
+    "diseaseDetection": "የጥገኛ መታወቂያ",
+    "news": "የግብርና ዜና",
+    "products": "ገበያ",
+    "calendar": "የግብርና ቀን መቁጠሪያ",
+    "helpCenter": "እርዳታ ማእከል"
+    
   },
   "header": {
     "searchPlaceholder": "ፈልግ...",

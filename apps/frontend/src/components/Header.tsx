@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation ,useNavigate} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next"; 
 import agrilcon from "../assets/images/agriIcon.png";
 import { useCart } from "../components/cart/CartContext"; 
@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { cartCount } = useCart(); 
-  const { isAuthenticated, signOut, user } = useAuth();
+  const { isAuthenticated, signOut, user, loading } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -56,37 +56,56 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
   const isActive = (path: string) => location.pathname === path;
 
   const NavLink = ({
-  to,
-  isActive,
-  children,
-}: {
-  to: string;
-  isActive: boolean;
-  children: React.ReactNode;
-}) => (
-  <Link
-    to={to}
-    className={`flex items-center text-sm font-medium p-2 transition-all duration-300 relative group ${
-      isActive
-        ? "text-green-800 font-semibold"
-        : "text-gray-600 hover:text-green-700"
-    }`}
-  >
-    {children}
-    {/* Animated underline */}
-    <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-green-600 rounded-full transition-all duration-300 ${
-      isActive ? "w-4/5" : "w-0 group-hover:w-4/5 bg-green-400"
-    }`}></div>
-  </Link>
-);
+    to,
+    isActive,
+    children,
+  }: {
+    to: string;
+    isActive: boolean;
+    children: React.ReactNode;
+  }) => (
+    <Link
+      to={to}
+      className={`flex items-center text-sm font-medium p-2 transition-all duration-300 relative group ${
+        isActive
+          ? "text-green-800 font-semibold"
+          : "text-gray-600 hover:text-green-700"
+      }`}
+    >
+      {children}
+      {/* Animated underline */}
+      <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-green-600 rounded-full transition-all duration-300 ${
+        isActive ? "w-4/5" : "w-0 group-hover:w-4/5 bg-green-400"
+      }`}></div>
+    </Link>
+  );
 
   const handleLogout = () => {
     signOut(); 
     navigate("/sign-in"); 
   };
 
-  // Check if user is truly authenticated
-  const isUserAuthenticated = isAuthenticated && localStorage.getItem('authToken');
+  // Simple authentication check
+  const isUserAuthenticated = isAuthenticated;
+
+  // Show loading skeleton if still loading
+  if (loading) {
+    return (
+      <header className="sticky top-0 z-50 backdrop-blur-lg bg-white/90 border-b border-gray-200 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            <div className="flex items-center">
+              <div className="w-9 h-9 bg-gray-200 rounded-full animate-pulse"></div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-gray-200 rounded-full animate-pulse"></div>
+              <div className="w-20 h-8 bg-gray-200 rounded animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-lg bg-white/90 border-b border-gray-200 shadow-sm">
@@ -117,39 +136,44 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
               </span>
             </Link>
 
-            {/* Main navigation links - PUBLIC LINKS FOR ALL USERS */}
-<nav className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 gap-6 lg:gap-8">{/* Public links for all users */}
-              <NavLink to="/" isActive={isActive("/")}>
-                <div className="bg-gray-100 p-1 rounded-md mr-2">
-                  <HomeIcon className="w-5 h-5 text-green-700" />
-                </div>
-                {t("nav.home")}
-              </NavLink>
-
-              <NavLink to="/about" isActive={isActive("/about")}>
-                <div className="bg-gray-100 p-1 rounded-md mr-2">
-                  <InfoIcon className="w-5 h-5 text-green-700" />
-                </div>
-                {t("nav.aboutUs")}
-              </NavLink>
-              
-              <NavLink to="/services" isActive={isActive("/services")}>
-                <div className="bg-gray-100 p-1 rounded-md mr-2">
-                  <HeartHandshakeIcon className="w-5 h-5 text-green-700" />
-                </div>
-                {t("nav.services")}
-              </NavLink>
-              
-              <NavLink to="/contact" isActive={isActive("/contact")}>
-                <div className="bg-gray-100 p-1 rounded-md mr-2">
-                  <PhoneIcon className="w-5 h-5 text-green-700" />
-                </div>
-                {t("nav.contact")}
-              </NavLink>
-
-              {/* Protected links - ONLY for authenticated users */}
-              {isUserAuthenticated && (
+            {/* Main navigation links */}
+            <nav className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 gap-32 lg:gap-8">
+              {/* Show different navigation based on authentication status */}
+              {!isUserAuthenticated ? (
+                // PUBLIC NAVIGATION - Show when NOT authenticated
                 <>
+                  <NavLink to="/" isActive={isActive("/")}>
+                    <div className="bg-gray-100 p-1 rounded-md mr-2">
+                      <HomeIcon className="w-5 h-5 text-green-700" />
+                    </div>
+                    {t("nav.home")}
+                  </NavLink>
+
+                  <NavLink to="/about" isActive={isActive("/about")}>
+                    <div className="bg-gray-100 p-1 rounded-md mr-2">
+                      <InfoIcon className="w-5 h-5 text-green-700" />
+                    </div>
+                    {t("nav.aboutUs")}
+                  </NavLink>
+                  
+                  <NavLink to="/services" isActive={isActive("/services")}>
+                    <div className="bg-gray-100 p-1 rounded-md mr-2">
+                      <HeartHandshakeIcon className="w-5 h-5 text-green-700" />
+                    </div>
+                    {t("nav.services")}
+                  </NavLink>
+                  
+                  <NavLink to="/contact" isActive={isActive("/contact")}>
+                    <div className="bg-gray-100 p-1 rounded-md mr-2">
+                      <PhoneIcon className="w-5 h-5 text-green-700" />
+                    </div>
+                    {t("nav.contact")}
+                  </NavLink>
+                </>
+              ) : (
+                // PROTECTED NAVIGATION - Show when authenticated
+                <>
+            
                   <NavLink
                     to="/weather-detector"
                     isActive={isActive("/weather-detector")}
@@ -159,13 +183,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                     </div>
                     {t("nav.weather")}
                   </NavLink>
-                  
-                  <NavLink to="/settings" isActive={isActive("/settings")}>
-                    <div className="bg-gray-100 p-1 rounded-md mr-2">
-                      <SettingsIcon className="w-5 h-5 text-green-700" />
-                    </div>
-                    {t("nav.settings")}
-                  </NavLink>
+                 
 
                   <NavLink to="/products" isActive={isActive("/products")}>
                     <div className="bg-gray-100 p-1 rounded-md mr-2">
@@ -184,7 +202,9 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                       </svg>
                     </div>
                     {t("nav.createProduct")}
+                    
                   </NavLink>
+       
                 </>
               )}
             </nav>
@@ -206,20 +226,24 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
 
             {/* Cart Icon - Only show for authenticated users */}
             {isUserAuthenticated && (
+              
               <Link to="/cart" className="relative">
                 <Button
                   variant="ghost"
                   size="icon"
                   className="relative text-green-700 hover:bg-green-50 transition-colors"
                 >
+                  
                   <ShoppingCart className="w-5 h-5" />
                   {cartCount > 0 && (
                     <span className="absolute top-0 right-0 inline-flex items-center justify-center h-4 w-4 rounded-full bg-red-500 text-xs font-bold text-white transform translate-x-1/2 -translate-y-1/2">
                       {cartCount}
                     </span>
+
                   )}
                 </Button>
               </Link>
+              
             )}
 
             {/* Language Dropdown */}
@@ -274,45 +298,48 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                   </SheetHeader>
 
                   <nav className="mt-6 flex flex-col gap-3">
-                    {/* Public links for ALL users */}
-                    <Link
-                      to="/"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
-                    >
-                      <HomeIcon className="w-5 h-5 mr-3" />
-                      {t("nav.home")}
-                    </Link>
+                    {/* Show different mobile navigation based on authentication */}
+                    {!isUserAuthenticated ? (
+                      // PUBLIC MOBILE NAVIGATION
+                      <>
+                        <Link
+                          to="/"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
+                        >
+                          <HomeIcon className="w-5 h-5 mr-3" />
+                          {t("nav.home")}
+                        </Link>
 
-                    <Link
-                      to="/about"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
-                    >
-                      <InfoIcon className="w-5 h-5 mr-3" />
-                      {t("nav.aboutUs")}
-                    </Link>
-                    
-                    <Link
-                      to="/services"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
-                    >
-                      <HeartHandshakeIcon className="w-5 h-5 mr-3" />
-                      {t("nav.services")}
-                    </Link>
-                    
-                    <Link
-                      to="/contact"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
-                    >
-                      <PhoneIcon className="w-5 h-5 mr-3" />
-                      {t("nav.contact")}
-                    </Link>
-
-                    {/* Protected links - ONLY for authenticated users */}
-                    {isUserAuthenticated && (
+                        <Link
+                          to="/about"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
+                        >
+                          <InfoIcon className="w-5 h-5 mr-3" />
+                          {t("nav.aboutUs")}
+                        </Link>
+                        
+                        <Link
+                          to="/services"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
+                        >
+                          <HeartHandshakeIcon className="w-5 h-5 mr-3" />
+                          {t("nav.services")}
+                        </Link>
+                        
+                        <Link
+                          to="/contact"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center px-4 py-2 text-green-800 hover:bg-green-50 rounded-lg font-medium"
+                        >
+                          <PhoneIcon className="w-5 h-5 mr-3" />
+                          {t("nav.contact")}
+                        </Link>
+                      </>
+                    ) : (
+                      // PROTECTED MOBILE NAVIGATION
                       <>
                         <Link
                           to="/weather-detector"

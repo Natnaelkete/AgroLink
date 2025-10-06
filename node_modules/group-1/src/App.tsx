@@ -18,6 +18,7 @@ import LandingPage from "./pages/LandingPage";
 import Header from "./components/Header";
 import Weather from "./components/weather/WeatherAdvice";
 import "./index.css";
+import {AuthProvider} from './context/AuthContext'
 import MainLayout from "./components/MainLayout";
 import About from "./pages/About";
 import SoilAdvice from "./pages/SoilAdvice";
@@ -29,6 +30,8 @@ import AdminDashboard from "./components/AdminDashboard";
 
 function App() {
   return (
+     <AuthProvider> 
+   
     <CartProvider>
       <BrowserRouter>
         <Routes>
@@ -63,6 +66,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </CartProvider>
+         </AuthProvider> 
   );
 }
 

@@ -1,3 +1,4 @@
+// context/AuthContext.tsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 
@@ -5,6 +6,7 @@ interface AuthContextType {
   token: string | null;
   userId: string | null;
   loading: boolean;
+  isAuthenticated: boolean;
   setAuth: (token: string, userId: string) => void;
   signOut: () => void;
 }
@@ -21,16 +23,35 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const storedToken = localStorage.getItem('authToken');
-    const storedUserId = localStorage.getItem('user-id');
-    if (storedToken && storedUserId) {
-      setToken(storedToken);
-      setUserId(storedUserId);
-    }
-    setLoading(false);
+    const initializeAuth = () => {
+      try {
+        const storedToken = localStorage.getItem('authToken');
+        const storedUserId = localStorage.getItem('user-id');
+        
+        console.log('AuthProvider Initializing:', {
+          storedToken: !!storedToken,
+          storedUserId: !!storedUserId
+        });
+        
+        if (storedToken && storedUserId) {
+          setToken(storedToken);
+          setUserId(stUserId);
+          console.log('Auth initialized with token');
+        } else {
+          console.log('No auth token found');
+        }
+      } catch (error) {
+        console.error('Error initializing auth:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    initializeAuth();
   }, []);
 
   const setAuth = (newToken: string, newUserId: string) => {
+    console.log('Setting auth:', { newToken: !!newToken, newUserId });
     setToken(newToken);
     setUserId(newUserId);
     localStorage.setItem('authToken', newToken);
@@ -38,6 +59,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   const signOut = () => {
+    console.log('Signing out');
     setToken(null);
     setUserId(null);
     localStorage.removeItem('authToken');
@@ -45,13 +67,24 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     localStorage.removeItem('role');
   };
 
+  const isAuthenticated = !!token;
+
+  console.log('AuthProvider State:', {
+    token: !!token,
+    userId,
+    isAuthenticated,
+    loading
+  });
+
   const value = {
     token,
     userId,
     loading,
+    isAuthenticated,
     setAuth,
     signOut,
   };
+  
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
