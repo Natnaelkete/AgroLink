@@ -140,20 +140,15 @@
     "postButton": "Post"
   },
   "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contact": "Contact",
     "weather": "Weather",
     "settings": "Settings",
-    "home": "Home",
-    "about us": "About us",
-    "contact": "Contact",
-    "createProduct": "Create Product",
     "marketplace": "Marketplace",
-    "allProducts": "All Products",
-    "products": "Products",
-    "soil-advice": "Services",
-    "diseaseDetection": "Disease Detection",
-    "news": "News",
-    "calendar": "Calendar",
-    "helpCenter": "Help Center"
+    "createProduct": "Sell Product",
+    "cart": "Cart"
   },
   "header": {
     "searchPlaceholder": "Search...",
@@ -165,7 +160,9 @@
     "signIn": "Sign In",
     "signUp": "Sign Up",
     "forgotPassword": "Forgot Password?",
-    "resetPassword": "Reset Password"
+    "resetPassword": "Reset Password",
+    "signInToAccess": "Sign in to access all features",
+    "notAuthenticated": "You are not authenticated to perform this action."
   },
   "profile": {
     "myProfile": "My Profile",
@@ -197,9 +194,12 @@
     "tipsDescription": "Learn best practices for your crops and livestock",
     "communityForum": "Community Forum",
     "forumDescription": "Connect with other farmers and experts",
-    "viewAllResources": "View All Resources"
+    "viewAllResources": "View All Resources",
+    "welcomeTitle": "🌱 Welcome to AgroLink",
+    "descriptionPart1": "AgroLink is your smart agricultural assistant. We connect farmers, buyers, and experts in one platform to improve productivity, decision-making, and market access.",
+    "descriptionPart2": "Explore weather predictions, crop recommendations, and trading opportunities – all in one place."
   },
-"signIn": {
+  "signIn": {
     "bannerTitle": "Welcome Back",
     "bannerDescription": "Sign in to access your agricultural marketplace",
     "appTitle": "AgroLink",
@@ -347,11 +347,6 @@
     "suggestedCropsTitle": "Suggested Crops:",
     "potentialEventsTitle": "Potential Extreme Events:"
   },
-  "dashboard": {
-    "welcomeTitle": "🌱 Welcome to AgroLink",
-    "descriptionPart1": "AgroLink is your smart agricultural assistant. We connect farmers, buyers, and experts in one platform to improve productivity, decision-making, and market access.",
-    "descriptionPart2": "Explore weather predictions, crop recommendations, and trading opportunities – all in one place."
-  },
   "productList": {
     "title": "Product List",
     "description": "See our available products below.",
@@ -464,10 +459,5 @@
     "successMessage": "Admin account created successfully!",
     "failedMessage": "Failed to create admin account. Please try again.",
     "networkError": "Network error. Please check your connection and try again."
-  },
-  "auth": {
-    "notAuthenticated": "You are not authenticated to perform this action.",
-        "forgotPassword": "Forgot Password?"
-
   }
 }

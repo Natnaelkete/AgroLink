@@ -1,88 +1,88 @@
 {
   "landingPage": {
     "heroPhrase1": "አግሮLink",
-    "heroPhrase2": "የገበሬው ምርጥ አጋር",
-    "heroSubtext": "የኢትዮጵያ ገበሬዎችን በቴክኖሎጂ እና በፈጠራ ማጎልበት",
-    "getStarted": "ይጀምሩ →",
-    "servicesTitle": "የእኛ አገልግሎቶች",
+    "heroPhrase2": "የገበሬ ምርጥ አጋር",
+    "heroSubtext": "የኢትዮጵያ ገበሬዎችን በቴክኖሎጂ እና በፈጠራ ማብቃት",
+    "getStarted": "ጀምር →",
+    "servicesTitle": "አገልግሎቶቻችን",
     "connectBuyers": {
-      "title": "ገዢዎችን እና ገበሬዎችን ያገናኙ",
-      "description": "አማላጆችን በማስወገድ ቀጥተኛ የገበያ ቦታ። ገበሬዎች ፍትሃዊ ዋጋ ያገኛሉ፣ ገዢዎችም ትኩስ ምርትን በቀጥታ ከምንጩ ያገኛሉ።"
+      "title": "ገዢዎችን እና ገበሬዎችን ማገናኘት",
+      "description": "ቀጥታ ገበያ መካከለኛዎችን ማስወገድ። ገበሬዎች ፍትሃዊ ዋጋ ያገኛሉ፣ ገዢዎች ቀጥታ ከምንጭ ትኩስ ምርት ያገኛሉ።"
     },
     "aiDetection": {
-      "title": "የሰብል በሽታን በAI ማወቅ",
-      "description": "ከዕፅዋት ፎቶዎች ፈጣን ምርመራ። ጉዳቱ ከመስፋፋቱ በፊት ሰብልዎን ለማዳን የህክምና እቅዶችን ያግኙ።"
+      "title": "AI የሰብል በሽታ ማሳወቂያ",
+      "description": "ከእርሻ ፎቶዎች ፈጣን ማነጋገር። ጉዳቱ ከመስፋፋቱ በፊት ሰብሎችዎን ለማዳን የሕክምና እቅዶችን ያግኙ።"
     },
     "advisor": {
-      "title": "24/7 የእርሻ አማካሪ",
-      "description": "በኪስዎ ውስጥ ምናባዊ የግብርና ባለሙያ። በአፈር ጤና፣ በተባይ መቆጣጠሪያ እና በሰብል ዑደቶች ላይ በግል የተበጀ ምክር በአማርኛ ወይም በኦሮምኛ ያግኙ።"
+      "title": "24/7 የርሻ አማካሪ",
+      "description": "በፖክትዎ ውስጥ ምናባዊ የርሻ ባለሙያ። ስለአፈር ጤና፣ ስላሞች መቆጣጠር እና የሰብል ዑደቶች በአማርኛ ወይም በኦሮምኛ ግላዊ ምክር ያግኙ።"
     },
     "weather": {
-      "title": "የአካባቢ የአየር ሁኔታ ማንቂያዎች እና ትንበያ",
-      "description": "ለእርስዎ ትክክለኛ ቦታ ትክክለኛ ትንበያዎችን እና የወደፊት ትንበያዎችን። የአፈር እርጥበት ትንተናም እናቀርባለን።"
+      "title": "የተወሰነ ቦታ የአየር ሁኔታ ማሳወቂያዎች እና ትንበያ",
+      "description": "ለትክክለኛ ቦታዎ ትክክለኛ ትንበያዎች እና የወደፊት ትንበያዎች። የአፈር እርጥበት ትንተናም እናቀርባለን"
     },
     "learnMore": "ተጨማሪ ይወቁ",
     "signUp": "ይመዝገቡ",
     "appName": "አግሮLink"
   },
   "testimonials": {
-    "title": "ገበሬዎች ምን ይላሉ",
-    "subtitle": "ከሺዎች የሚቆጠሩ ገበሬዎች ከመድረካችን ጋር የእርሻ ልምዶቻቸውን የቀየሩ ይቀላቀሉ።",
+    "title": "ገበሬዎች ምን ይላሉ?",
+    "subtitle": "የርሻ ልምዶቻቸውን በመድረኳችን የቀየሩ በሺዎች የሚቆጠሩ ገበሬዎች ይቀላቀሉ።",
     "abebe": {
       "name": "አበበ",
       "role": "ገበሬ፣ ደቡብ ወሎ",
-      "quote": "የ AI መለያ እና የባለሙያ ምክር በመጠቀም የሰብሌን ምርት 40% ጨምራለሁ።"
+      "quote": "የAI ማሳወቂያ እና የባለሙያ ምክር በመጠቀም የሰብል ምርቴን በ40% ጨምራለሁ።"
     },
     "kebed": {
-      "name": "ከበድ",
-      "role": "የቻይ ፋርማ ባለቤት፣ ጋምቤላ",
-      "quote": "ገበያው ከዓለም አቀፍ ገዢዎች ጋር በቀጥታ አገናኘኝ።"
+      "name": "ከበደ",
+      "role": "የሻይ እርሻ ባለቤት፣ ጋምቤላ",
+      "quote": "ገበያው ቀጥታ ከዓለም አቀፍ ገዢዎች ጋር አገናኘኝ።"
     },
     "shemsu": {
       "name": "ሸምሱ",
       "role": "የወተት እና የሰብል ገበሬ፣ ሲዳማ",
-      "quote": "የአየር ሁኔታ ትንበያዎች ሰብሎቼን ከማያልቅ የዝናብ ማዕበል አዳኑ።"
+      "quote": "የአየር ሁኔታ ትንበያዎች ሰብሎቼን ከድንገተኛ የመጋዝ ዝናቦች አዳኑ።"
     }
   },
   "faq": {
-    "title": "በተደጋጋሚ የሚጠየቁ ጥያቄዎች",
+    "title": "ተደጋግሞ የሚጠየቁ ጥያቄዎች",
     "cropDetection": {
-      "question": "የ AI የሰብል መለያ እንዴት ይሠራል?",
-      "answer": "የእኛ AI የሳተላይት ምስሎችን እና የማሽን ትምህርትን በመጠቀም የሰብል ጤና ችግሮችን፣ ተባዮችን እና በሽታዎችን በ95% ትክክለኛነት ይለያል።"
+      "question": "የAI የሰብል ማሳወቂያ እንዴት ይሠራል?",
+      "answer": "የእኛ AI የሳተላይት ምስሎችን እና የማሽን ትምህርትን በመጠቀም የሰብል ጤና ጉዳቶችን፣ ስላሞችን እና በሽታዎችን በ95% ትክክለኛነት ይለያል።"
     },
     "connectFarmers": {
       "question": "ገበሬዎችን ከገዢዎች ጋር እንዴት ትገናኛላችሁ?",
-      "answer": "መድረካችን ሁለቱንም ገበሬዎች እና ገዢዎች ያረጋግጣል፣ ቀጥተኛ ግንኙነት ያመቻቻል እና በገበያ ትንታኔ ፍትሃዊ የዋጋ አሰጣጥ ያረጋግጣል።"
+      "answer": "መድረኳችን ሁለቱንም ገበሬዎች እና ገዢዎች ያረጋግጣል፣ ቀጥታ ግንኙነት ያመቻቻል እና በገበያ ትንተና ፍትሃዊ የዋጋ አሰጣጥ ያረጋግጣል።"
     },
     "supportedCrops": {
-      "question": "ምን ዓይነት ሰብሎችን ትደግፋላችሁ?",
-      "answer": "ሁሉንም ዋና ዋና ሰብሎች ማለትም ሩዝ፣ ስንዴ፣ ጥጥ፣ ፍራፍሬዎች፣ አትክልቶች እና ልዩ ሰብሎች በተለያዩ ክልሎች እንደግፋለን።"
+      "question": "ምን ምን ሰብሎችን ትደግፋላችሁ?",
+      "answer": "ሩዝ፣ ስንዴ፣ ጥጥ፣ ፍራፍሬዎች፣ አትክልቶች እና ልዩ ሰብሎችን ጨምሮ ሁሉንም ዋና ዋና ሰብሎች በተለያዩ ክልሎች እንደርዳለን።"
     }
   },
   "stats": {
-    "farmersEmpowered": "የተረጋገ ገበሬዎች",
-    "cropsProtected": "የተጠበቁ ሰብሎች",
+    "farmersEmpowered": "የተባበሩ ገበሬዎች",
+    "cropsProtected": "የተቆጡ ሰብሎች",
     "yieldIncrease": "አማካይ የምርት ጭማሪ",
     "satisfaction": "የገበሬ እርካታ"
   },
   "about": {
-    "title": "በቴክኖሎጂ ግብርናን ማደስ",
-    "description": "ባህላዊ የእርሻ ልምዶችን የሚቀይሩ ዘመናዊ ቴክኖሎጂዎችን በመጠቀም ገበሬዎችን ማጎልበት ቃል ገብተናል። መድረካችን AI፣ የውሂብ ትንተና እና የግብርና ሙያዊ እውቀትን በማጣመር ለዘመናዊ ገበሬ ዘላቂ መፍትሄዎችን ይፈጥራል።",
-    "mission": "በ2025 ቴክኖሎጂ እና ግብርናን ለማገናኘት በተሰጠ ተልዕኮ ተመሠርቷል",
-    "serviceArea": "በመላው ኢትዮጵያ ለገበሬዎች አገልግሎት ይሰጣል",
-    "innovationAlt": "የእርሻ ፈጠራ",
-    "sustainabilityAlt": "ዘላቂ እርሻ"
+    "title": "ርሻን በቴክኖሎጂ ማማወር",
+    "description": "ባህላዊ የርሻ ልምዶችን የሚቀይሩ ዘመናዊ ቴክኖሎጂዎችን በመጠቀም ገበሬዎችን ማብቃት ቃል ገብተናል። መድረኳችን AI፣ የውሂብ ትንተና እና የርሻ ባለሙያነትን በማጣመር ለዘመናዊ ገበሬ ዘላቂ መፍትሄዎችን ይፈጥራል።",
+    "mission": "በ2025 በቴክኖሎጂ እና ርሻ መካከል ግንኙነት ለማድረግ በተቋቋመ",
+    "serviceArea": "በመላው ኢትዮጵያ ለገበሬዎች አገልግሎት የምንሰጥ",
+    "innovationAlt": "የርሻ ፈጠራ",
+    "sustainabilityAlt": "ዘላቂ ርሻ"
   },
   "contact": {
-    "title": "ያግኙን",
-    "description": "ስለ መድረካችን ጥያቄዎች አሉዎት? ቡድናችን ለመጀመር እና ማንኛውንም ጥያቄ ለመመለስ እዚህ አለ።",
+    "title": "አግኙን",
+    "description": "ስለ መድረኳችን ጥያቄዎች አሉዎት? እኛ ቡድን እንዲጀምሩ እና ማንኛውም ጥያቄዎችዎን ለመመለስ እዚህ አለን።",
     "email": "ኢሜይል",
     "phone": "ስልክ",
     "office": "ቢሮ",
-    "emailSubtitle": "በ24 ሰዓት ውስጥ እንመልሳለን",
-    "phoneSubtitle": "ሰኞ-አርብ ከጧት 9 ሰዓት እስከ ማታ 6 ሰዓት",
-    "officeSubtitle": "የግብርና ፈጠራ ፓርክ፣ ኢትዮጵያ",
-    "sendMessage": "መልእክት ላክ",
+    "emailSubtitle": "በ24 ሰዓታት ውስጥ እንመልሳለን",
+    "phoneSubtitle": "ሰኞ-አርብ ከጠዋት 9 እስከ ማታ 6 ድረስ",
+    "officeSubtitle": "የርሻ ፈጠራ ፓርክ፣ ኢትዮጵያ",
+    "sendMessage": "መልእክት ይላኩ",
     "form": {
       "firstName": "ስም",
       "lastName": "የአባት ስም",
@@ -92,18 +92,18 @@
       "firstNamePlaceholder": "አበበ",
       "lastNamePlaceholder": "ከበደ",
       "emailPlaceholder": "abebe@example.com",
-      "subjectPlaceholder": "እንዴት ልንርዳችሁ እንችላለን?",
-      "messagePlaceholder": "ስለ እርሻ ፍላጎቶችዎ ይንገሩን..."
+      "subjectPlaceholder": "እንዴት ልንርዳህ እንችላለን?",
+      "messagePlaceholder": "ስለ የርሻ ፍላጎቶችዎ ይንገሩን..."
     }
   },
   "cta": {
-    "title": "እርሻዎን ለመቀየር ዝግጁ ነዎት?",
-    "description": "ከሺዎች የሚቆጠሩ ገበሬዎች ከ AI የሚመነጭ መድረካችን ጋር ምርታቸውን እና ትርፋቸውን እየጨመሩ ናቸው።",
-    "startButton": "ይጀምሩ",
+    "title": "ርሻዎን ለመቀየር ዝግጁ ነዎት?",
+    "description": "የምርት እና ትርፋቸውን በAI የሚነዳ መድረኳችን እየጨመሩ ያሉ በሺዎች የሚቆጠሩ ገበሬዎች ይቀላቀሉ።",
+    "startButton": "ጀምር",
     "demoButton": "ዲሞ ያዝዙ"
   },
   "footer": {
-    "description": "ገበሬዎችን በ AI ቴክኖሎጂ ለዘላቂ ግብርና ማጎልበት።",
+    "description": "ገበሬዎችን በAI ቴክኖሎጂ ማብቃት ለዘላቂ ርሻ።",
     "product": "ምርት",
     "company": "ኩባንያ",
     "support": "ድጋፍ",
@@ -118,8 +118,8 @@
     "helpCenter": "የእርዳታ ማዕከል",
     "contact": "አግኙን",
     "documentation": "ሰነዶች",
-    "apiStatus": "API ሁኔታ",
-    "copyright": "© 2025 አግሮLink. ሁሉም መብቶች የተጠበቁ ናቸው።"
+    "apiStatus": "የAPI ሁኔታ",
+    "copyright": "© 2025 አግሮLink። ሁሉም መብቶች የተጠበቁ ናቸው።"
   },
   "social": {
     "facebook": "ፌስቡክ",
@@ -128,316 +128,310 @@
     "instagram": "ኢንስታግራም"
   },
   "postProduct": {
-    "title": "የምርት ማሳወቂያ",
+    "title": "ምርት ለጥፍ",
     "productName": "የምርት ስም",
-    "quantity": "መጠን",
-    "quantityPlaceholder": "መጠን እንደ 1, 30 ያስገቡ",
+    "quantity": "ብዛት",
+    "quantityPlaceholder": "ብዛት አስገባ እንደ 1፣ 30",
     "price": "ዋጋ",
-    "pricePlaceholder": "ዋጋ ያስገቡ",
-    "unit": "መለኪያ",
+    "pricePlaceholder": "ዋጋ አስገባ",
+    "unit": "አሃድ",
     "description": "መግለጫ",
-    "uploadImage": "ምስል ያስገቡ",
-    "postButton": "ማሳወቂያ አስገባ"
+    "uploadImage": "ምስል ስቀል",
+    "postButton": "ለጥፍ"
   },
   "nav": {
-    "weather": "አየር ሁኔታ",
-    "settings": "ቅንብሮች",
-    "about us": "ስለ እኛ",
-    "contact": "ያግኙን",
     "home": "መነሻ",
-    "createProduct": "ምርት ፍጠር",
+    "aboutUs": "ስለ እኛ",
+    "services": "አገልግሎቶች",
+    "contact": "አግኙን",
+    "weather": "አየር",
+    "settings": "ቅንብሮች",
     "marketplace": "ገበያ",
-    "allProducts": "ሁሉም ምርቶች",
-    "products": "ምርቶች",
-    "soil-advice": "አገልግሎቶች",
-    "diseaseDetection": "የበሽታ ማወቂያ",
-    "news": "ዜና",
-    "calendar": "ቀን መቁጠሪያ",
-    "helpCenter": "የእርዳታ መረጃ ማዕከል"
+    "createProduct": "ምርት ይሽጡ",
+    "cart": "ጋሪ"
   },
   "header": {
     "searchPlaceholder": "ፈልግ...",
-    "notifications": "ማሳሰቢያዎች",
-    "noNotifications": "አዲስ ማሳሰቢያዎች የሉም።",
-    "connectingFarmers": "ገበሬዎችን ማገናኘት"
+    "notifications": "ማሳወቂያዎች",
+    "noNotifications": "አዲስ ማሳወቂያ የለም።",
+    "connectingFarmers": "ገበሬዎችን በማገናኘት ላይ"
   },
   "auth": {
     "signIn": "ግባ",
-      "forgotPassword": "የይለፍ ቃል ረሳኽ?",
     "signUp": "ይመዝገቡ",
-    "forgotPassword": "የይለፍ ቃል ረስተዋል?",
-    "resetPassword": "የይለፍ ቃል ዳግመኛ ማድረግ"
+    "forgotPassword": "የይለፍ ቃል ረሳችሁ?",
+    "resetPassword": "የይለፍ ቃል ዳግም ያስጀምሩ",
+    "signInToAccess": "ሁሉንም ባህሪያት ለማግኘት ይግቡ",
+    "notAuthenticated": "ይህን ተግባር ለማከናወን አልተፈቀደልዎትም።"
   },
   "profile": {
-    "myProfile": "መለያዬ",
+    "myProfile": "መገለጫዬ",
     "myProducts": "ምርቶቼ",
     "logout": "ውጣ"
   },
   "dashboard": {
-    "welcome": "እንኳን በደህና መጡ",
-    "welcomeSubtitle": "ዛሬ በግብርና ምርቶችዎ ላይ የሚከናወነው ይህ ነው",
+    "welcome": "እንኳን ደህና መጡ",
+    "welcomeSubtitle": "ዛሬ በርሻ ምርቶችዎ ላይ የሚከሰተው ነገር እዚህ አለ",
     "totalProducts": "ጠቅላላ ምርቶች",
-    "activeOrders": "እየተካሄዱ ያሉ ትዕዛዞች",
+    "activeOrders": "ንቁ ትዕዛዞች",
     "newMessages": "አዲስ መልዕክቶች",
     "monthlyEarnings": "ወርሃዊ ገቢ",
     "recentProducts": "የቅርብ ጊዜ ምርቶችዎ",
     "viewAll": "ሁሉንም ይመልከቱ",
     "product": "ምርት",
     "price": "ዋጋ",
-    "location": "አካባቢ",
+    "location": "ቦታ",
     "status": "ሁኔታ",
     "date": "ቀን",
     "available": "ይገኛል",
-    "sold": "ተሸጠ",
-    "quickActions": "በፍጥነት የሚደረጉ እርምጃዎች",
+    "sold": "ተሸጧል",
+    "quickActions": "ፈጣን ተግባራት",
     "addProduct": "አዲስ ምርት ጨምር",
-    "requestService": "የግብርና አገልግሎት ይጠይቁ",
-    "browseMarket": "ገበያ ይመልከቱ",
-    "resources": "ሀብቶች",
-    "agriculturalTips": "የግብርና ምክሮች",
-    "tipsDescription": "ለእርሻዎ እና ለእንስሳትዎ የሚረዱ የተሻለ ዘዴዎችን ይማሩ",
-    "communityForum": "ማህበረሰብ መድረክ",
-    "forumDescription": "ከሌሎች ገበሬዎች እና ከባለሙያዎች ጋር ይገናኙ",
-    "viewAllResources": "ሁሉንም ሀብቶች ይመልከቱ"
+    "requestService": "የርሻ አገልግሎት ይጠይቁ",
+    "browseMarket": "ገበያ ይሻሉ",
+    "resources": "መርጃዎች",
+    "agriculturalTips": "የርሻ ምክሮች",
+    "tipsDescription": "ለሰብሎችዎ እና እንስሳትዎ ምርጥ ልምዶችን ይማሩ",
+    "communityForum": "የማህበረሰብ መድረክ",
+    "forumDescription": "ከሌሎች ገበሬዎች እና ባለሙያዎች ጋር ይገናኙ",
+    "viewAllResources": "ሁሉንም መርጃዎች ይመልከቱ",
+    "welcomeTitle": "🌱 ወደ አግሮLink እንኳን ደህና መጡ",
+    "descriptionPart1": "አግሮLink የእርስዎ ዘመናዊ የርሻ ረዳት ነው። ገበሬዎችን፣ ገዢዎችን እና ባለሙያዎችን በአንድ መድረክ እናገናኛለን ምርታማነት፣ ውሳኔ መግባት እና የገበያ መዳረሻ ለማሻሻል።",
+    "descriptionPart2": "የአየር ሁኔታ ትንበያዎችን፣ የሰብል ምክሮችን እና የንግድ እድሎችን በአንድ ቦታ ያስሱ።"
   },
- "signIn": {
-      "bannerTitle": "እንኳን ደህና መጡ",
-      "bannerDescription": "የእርሻ ገበያ ቦታዎን ለመድረስ ይግቡ",
-      "appTitle": "አግሮቴክ ገበያ",
-      "formDescription": "ለመቀጠል ወደ መለያዎ ይግቡ",
-      "phoneLabel": "ስልክ ቁጥር",
-      "phonePlaceholder": "ስልክ ቁጥርዎን ያስገቡ",
-      "passwordLabel": "የይለፍ ቃል",
-      "passwordPlaceholder": "የይለፍ ቃልዎን ያስገቡ",
-      "signInButton": "ግባ",
-      "loginWithOtp": "ወይም በOTP ይግቡ",
-      "loginWithPassword": "ወይም በየይለፍ ቃል ይግቡ",
-      "sendOtpButton": "OTP ይላክ",
-      "verifyPhoneTitle": "ስልክዎን ያረጋግጡ",
-      "sentOtpMessage": "የማረጋገጫ ኮድ ወደዚህ ቁጥር ልከናል",
-      "enterOtpLabel": "OTP ያስገቡ",
-      "verifyButton": "OTP አረጋግጥ",
-      "processing": "በማቀናበር ላይ...",
-      "verifying": "በማረጋገጥ ላይ...",
-      "didntReceive": "ኮድ አልደረሰዎትም?",
-      "resend": "እንደገና ይላኩ",
-      "noAccount": "መለያ የሎትም?",
-      "signUpNow": "ይመዝገቡ",
-      "loginSuccess": "በተሳካ ሁኔታ ገብተዋል!",
-      "loginFailed": "መግባት አልተሳካም",
-      "networkError": "የኔትወርክ ስህተት፣ እባክዎ እንደገና ይሞክሩ"
-    },
+  "signIn": {
+    "bannerTitle": "እንኳን ደህና መጡ",
+    "bannerDescription": "የርሻ ገበያዎን ለማግኘት ይግቡ",
+    "appTitle": "አግሮLink",
+    "formDescription": "ለመቀጠል ወደ መለያዎ ይግቡ",
+    "phoneLabel": "ስልክ ቁጥር",
+    "phonePlaceholder": "ስልክ ቁጥርዎን ያስገቡ",
+    "passwordLabel": "የይለፍ ቃል",
+    "passwordPlaceholder": "የይለፍ ቃልዎን ያስገቡ",
+    "signInButton": "ግባ",
+    "loginWithOtp": "ወይም፣ በOTP ይግቡ",
+    "loginWithPassword": "ወይም፣ በይለፍ ቃል ይግቡ",
+    "sendOtpButton": "OTP ይላኩ",
+    "verifyPhoneTitle": "ስልክዎን ያረጋግጡ",
+    "sentOtpMessage": "የማረጋገጫ ኮድ ወደ ላክን",
+    "enterOtpLabel": "OTP ያስገቡ",
+    "verifyButton": "OTP ያረጋግጡ",
+    "processing": "በማቀናበር ላይ...",
+    "verifying": "በማረጋገጥ ላይ...",
+    "didntReceive": "ኮድ አልደረሰም?",
+    "resend": "እንደገና ይላኩ",
+    "noAccount": "መለያ የሎትም?",
+    "signUpNow": "አሁን ይመዝገቡ",
+    "loginSuccess": "ግባት ተሳክቷል!",
+    "loginFailed": "ግባት አልተሳካም",
+    "networkError": "የኔትወርክ ስህተት፣ እባክዎ እንደገና ይሞክሩ"
+  },
   "signUp": {
     "title": "አግሮLink",
-    "description": "ከማህበሩ ጋር ለመገናኘት ይመዝገቡ።",
+    "description": "ከማህበረሰብዎ ጋር ለመገናኘት ይመዝገቡ።",
     "nameLabel": "ሙሉ ስም",
     "namePlaceholder": "ሙሉ ስምዎን ያስገቡ",
     "phoneLabel": "ስልክ ቁጥር",
-    "phonePlaceholder": "ለምሳሌ፣ +251912345678",
-    "emailLabel": "የኢሜል አድራሻ (አማራጭ)",
-    "emailPlaceholder": "ለምሳሌ፣ you@example.com",
+    "phonePlaceholder": "ምሳሌ፦ +251912345678",
+    "emailLabel": "ኢሜይል አድራሻ (አማራጭ)",
+    "emailPlaceholder": "ምሳሌ፦ you@example.com",
     "passwordLabel": "የይለፍ ቃል",
     "passwordPlaceholder": "የይለፍ ቃልዎን ያስገቡ",
-    "roleSelect": "ሚናዎትን ይምረጡ",
+    "roleSelect": "ሚናዎን ይምረጡ",
     "roleFarmer": "ገበሬ",
     "roleBuyer": "ገዢ",
-    "createAccount": "መለያዎን ይፍጠሩ",
-    "alreadyAccount": "አካውንት አለዎት?",
+    "createAccount": "መለያ ይፍጠሩ",
+    "alreadyAccount": "ቀድሞውኑ መለያ አሎት?",
     "loginHere": "እዚህ ይግቡ",
     "registrationSuccess": "መለያዎ በተሳካ ሁኔታ ተመዝግቧል",
-    "registrationFailed": "የመመዝገቢያ ሂደት አልተሳካም",
-    "networkError": "የኔትዎርክ ስህተት",
+    "registrationFailed": "ምዝገባ አልተሳካም",
+    "networkError": "የኔትወርክ ስህተት",
     "unknownError": "ያልታወቀ ስህተት",
-    "sendOtpMessage": "የ OTP መልእክት ወደ ስልክ ቁጥርዎ ተልኳል። እባክዎ ለማረጋገጥ ከታች ያስገቡት።",
-    "enterOtpLabel": "የማረጋገጫ ኮድ ያስገቡ",
-    "verifyButton": "አረጋግጥ እና መለያ ፍጠር",
-    "otpError": "ትክክለኛ ያልሆነ ወይም ጊዜ ያለፈበት OTP።",
-    "bannerTitle": "አግሮLink ን ይቀላቀሉ",
-    "bannerDescription": "ከኢትዮጵያ የእርሻ ማህበረሰብ ጋር ይገናኙ። ገበያዎችን፣ ሀብቶችን እና መሳሪያዎችን ይድረሱ።",
+    "bannerTitle": "ወደ አግሮLink ይቀላቀሉ",
+    "bannerDescription": "ከኢትዮጵያ የርሻ ማህበረሰብ ጋር ይገናኙ። ወደ ገበያዎች፣ መርጃዎች እና መሳሪያዎች ይድረሱ።",
     "appTitle": "አግሮLink",
-    "formDescription": "በደቂቃዎች ውስጥ መለያዎን ይፍጠሩ",
+    "formDescription": "መለያዎን በሚኮት ያህል ጊዜ ውስጥ ይፍጠሩ",
     "roleLabel": "እኔ",
-    "processing": "በሂደት ላይ...",
-    "continue": "ይቀጥሉ",
-    "verifyPhoneTitle": "ስልክ ቁጥርዎን ያረጋግጡ",
-    "sentOtpMessage": "ባለ 6 አሃዝ ኮድ ወደ",
-    "didntReceive": "ኮዱን አልደረሰዎትም?",
-    "resend": "እንደገና ላክ"
+    "processing": "በማቀናበር ላይ...",
+    "continue": "ቀጥል",
+    "verifyPhoneTitle": "ስልክዎን ያረጋግጡ",
+    "sentOtpMessage": "6-አሃዝ ኮድ ወደ ላክን",
+    "didntReceive": "ኮድ አልደረሰም?",
+    "resend": "እንደገና ይላኩ",
+    "verifyButton": "ያረጋግጡ እና መለያ ይፍጠሩ",
+    "otpError": "ልክ ያልሆነ ወይም ጊዜ ያለፈበት OTP።",
+    "sendOtpMessage": "OTP ወደ ስልክዎ ልከናል። ለማረጋገጥ ከዚህ በታች ያስገቡ።"
   },
   "forgotPassword": {
-    "title": "የይለፍ ቃል ረስተዋል?",
-    "description": "የኢሜል አድራሻዎን ያስገቡ እና የይለፍ ቃልዎን ዳግመኛ ያድርጉ",
-    "emailLabel": "የኢሜል አድራሻ",
+    "title": "የይለፍ ቃል ረሳችሁ?",
+    "description": "የይለፍ ቃልዎን ለማስቀየር ኢሜይል አድራሻዎን ያስገቡ።",
+    "emailLabel": "ኢሜይል አድራሻ",
     "emailPlaceholder": "you@example.com",
-    "button": "የይለፍ ቃል መልእክት ላክ",
-    "remember": "የይለፍ ቃልዎን አስታውሰዋል?",
+    "button": "የማስቀየር አገናኝ ይላኩ",
+    "remember": "የይለፍ ቃልዎን ተገንዝበዋል?",
     "signInLink": "እዚህ ይግቡ",
-    "success": "ይህ ኢሜል ከተመዘገበ የይለፍ ቃል የማዘዣ አገልግሎት ይላካል",
-    "failed": "የይለፍ ቃል ማዘዣ አልተሳካም",
-    "networkError": "የኔትዎርክ ስህተት ወይም አገልግሎት አልተገኘም",
+    "success": "ይህ ኢሜይል ከተመዘገበ የይለፍ ቃል ማስቀየሪያ አገናኝ ይላካል።",
+    "failed": "የይለፍ ቃል ማስቀየር አልተሳካም",
+    "networkError": "የኔትወርክ ስህተት ወይም አገልግሎት አይገኝም",
     "unknownError": "ያልታወቀ ስህተት"
   },
   "resetPassword": {
-    "title": "የይለፍ ቃል ዳግመኛ ማድረግ",
-    "description": "አዲስ የይለፍ ቃልዎን ያስገቡ",
+    "title": "የይለፍ ቃል ዳግም ያስጀምሩ",
+    "description": "አዲሱን የይለፍ ቃልዎን ያስገቡ።",
     "newPasswordLabel": "አዲስ የይለፍ ቃል",
-    "newPasswordPlaceholder": "አዲስ የይለፍ ቃልዎን ያስገቡ",
+    "newPasswordPlaceholder": "አዲሱን የይለፍ ቃልዎን ያስገቡ",
     "confirmPasswordLabel": "የይለፍ ቃል አረጋግጥ",
     "confirmPasswordPlaceholder": "የይለፍ ቃልዎን ያረጋግጡ",
-    "button": "የይለፍ ቃል ዳግመኛ አድርግ"
+    "button": "የይለፍ ቃል ዳግም ያስጀምሩ"
   },
   "product": {
     "list": {
       "title": "ትኩስ እና ኦርጋኒክ ምርቶች",
-      "subtitle": "በአገር ውስጥ የተመረቱ ከፍተኛ ጥራት ያላቸውን ምርቶች ወደ ደጃፍዎ ደርሰን እናቀርባለን።",
-      "searchPlaceholder": "ምርቶችን ይፈልጉ...",
-      "inStock": "በመጋዘን",
+      "subtitle": "በአካባቢዎ የሚገኙ ከፍተኛ ጥራት ያላቸው ምርቶችን ወደ በርዎ የሚያቀርቡ ሰፊ ምርቶችን ያስሱ።",
+      "searchPlaceholder": "ምርቶችን ፈልግ...",
+      "inStock": "በመጋዘን ውስጥ አለ",
       "noProductsFound": "ምንም ምርቶች አልተገኙም",
-      "adjustSearch": "እባክዎ የፍለጋ ቃላትዎን ይቀይሩ ወይም በኋላ ይሞክሩ።",
-      "viewDetails": "ዝርዝሩን ይመልከቱ"
+      "adjustSearch": "እባክዎ የፍለጋ ቃላትዎን ያስጠጉ ወይም ቆይተው ይመልከቱ።",
+      "viewDetails": "ዝርዝር ይመልከቱ"
     },
     "detail": {
-      "loading": "የምርት ዝርዝሮች እየተጫኑ ነው...",
+      "loading": "የምርት ዝርዝር በመጫን ላይ...",
       "notFound": "ምርት አልተገኘም",
-      "errorMessage": "የምርት ዝርዝሮችን በመጫን ላይ ስህተት ተፈጥሯል። ስህተት: {{error}}",
+      "errorMessage": "የምርት ዝርዝር በማጫን ጊዜ ስህተት ተከስቷል። ስህተት፦ {{error}}",
       "backToProducts": "ወደ ምርቶች ተመለስ",
       "noDescription": "ምንም መግለጫ አልተሰጠም።",
-      "inStock": "በክምችት ውስጥ",
-      "addToCart": "ወደ ጋሪ አክል",
-      "farmerInfo": "የገበሬ መረጃ",
-      "noFarmerInfo": "የገበሬ መረጃ አልተገኘም።",
-      "noFarmerDescription": "ገበሬው ምንም መግለጫ አልሰጠም።",
+      "inStock": "በመጋዘን ውስጥ አለ",
+      "addToCart": "ወደ ጋሪ ጨምር",
       "unknownFarmer": "ያልታወቀ ገበሬ",
-      "farmerDescription": "ይህ ምርት በታመነ አካባቢ ገበሬ ተዘጋጅቷል።",
-      "info": "የገበሬ መረጃ"
+      "farmerDescription": "ይህ ምርት በታመነ አካባቢ ገበሬ የቀረበ ነው።",
+      "info": "መረጃ"
     }
+  },
+  "cart": {
+    "title": "የግዢ ጋሪዎ",
+    "empty": "ጋሪዎ ባዶ ነው",
+    "emptyMessage": "ጋሪዎ ውስጥ ምንም አልጨመርክበትም።",
+    "startShopping": "ግዢ ይጀምሩ",
+    "orderSummary": "የትዕዛዝ ማጠቃለያ",
+    "finalizeOrder": "ከክፍያ በፊት ትዕዛዝዎን ይጨርሱ",
+    "items": "እቃዎች ({{count}})",
+    "total": "ጠቅላላ",
+    "payWithChapa": "በChapa ይክፈሉ",
+    "continueShopping": "ግዢ ይቀጥሉ",
+    "itemPerItem": "በእያንዳንዱ እቃ",
+    "chapaPaymentMessage": "ወደ Chapa ክፍያ በመሄድ ላይ። የኋላ አገልግሎትዎ ውህደቱን ይቆጣጠራል።"
+  },
+  "addToCart": "ወደ ጋሪ ጨምር",
+  "paymentSuccess": {
+    "title": "ክፍያ ተሳክቷል",
+    "message": "ክፍያዎ በተሳካ ሁኔታ ተከናውኗል።",
+    "backToDashboard": "ወደ ዳሽቦርድ ተመለስ"
+  },
+  "weatherAdvice": {
+    "geolocationNotSupported": "የጂኦሎኬሽን በአሳሽዎ አይደገፍም።",
+    "serverError": "�ከሰርቨር ምክር ማግኘት አልተሳካም።",
+    "fetchError": "ምክር በሚጠይቁበት ጊዜ ስህተት ተከስቷል።",
+    "locationPermissionError": "አካባቢዎን ማግኘት አልተቻለም። እባክዎ የአካባቢ አገልግሎቶች እንደተነሱ ያረጋግጡ።",
+    "loadingAuth": "ማረጋገጫ በመጫን ላይ...",
+    "loginRequiredTitle": "🚫 ግባት ያስፈልጋል",
+    "loginRequiredText": "የርሻ የአየር ሁኔታ አማካሪን ለማግኘት እባክዎ ይግቡ።",
+    "goToLogin": "ወደ ግባት ይሂዱ",
+    "advisorTitle": "የርሻ የአየር ሁኔታ አማካሪ",
+    "advisorSubtitle": "ለእርሻዎ ግላዊ የአየር ሁኔታ ትንበያዎች እና የሰብል ምክር ያግኙ።",
+    "fetchingAdvice": "ምክር በመጠየቅ ላይ...",
+    "getAdviceButton": "ለአካባቢዬ ምክር ያግኙ",
+    "currentWeatherTitle": "የአሁኑ አየር ሁኔታ በ{{location}}",
+    "predictedAdviceTitle": "የተተነበየ ምክር",
+    "weatherForecastTitle": "የአየር ሁኔታ ትንበያ፦",
+    "predictedSoilTitle": "የተተነበየ የአፈር አይነት፦",
+    "suggestedCropsTitle": "የሚመከሩ ሰብሎች፦",
+    "potentialEventsTitle": "ሊከሰቱ የሚችሉ ከፍተኛ ክስተቶች፦"
   },
   "productList": {
     "title": "የምርት ዝርዝር",
-    "description": "የሚገኙ ምርቶቻችንን ከታች ይመልከቱ።",
-    "loading": "ምርቶችን በመጫን ላይ...",
+    "description": "ከታች የሚገኙ ምርቶቻችንን ይመልከቱ።",
+    "loading": "ምርቶች በመጫን ላይ...",
     "error": "ስህተት",
-    "fetchError": "ምርቶችን መጫን አልተሳካም።",
-    "noProducts": "በአሁኑ ሰአት ምርቶች የሉም።",
+    "fetchError": "ምርቶችን ማጫን አልተሳካም።",
+    "noProducts": "�አሁን ምንም ምርቶች አይገኙም።",
     "imageAlt": "{{productName}} ምስል",
-    "price": "ETB {{price}}",
-    "priceUnavailable": "ዋጋ የለም",
-    "priceUnit": "በአንድ አሃድ",
+    "price": "ብር {{price}}",
+    "priceUnit": "በአሃድ",
     "addedToCart": "ወደ ጋሪ ታክሏል",
     "addToCart": "ወደ ጋሪ ጨምር",
     "farmer": "ገበሬ",
     "phone": "ስልክ"
   },
-  "weatherAdvice": {
-    "geolocationNotSupported": "የአካባቢ አገልግሎቶች በዚህ አሳሽ ላይ አይደገፍም።",
-    "serverError": "ከአገልጋይ ምክር ማግኘት አልተሳካም።",
-    "fetchError": "ምክርን በሚያመጡበት ጊዜ ስህተት ተከስቷል።",
-    "locationPermissionError": "አካባቢዎን ማግኘት አልተቻለም። የአካባቢ አገልግሎቶች መብራታቸውን ያረጋግጡ።",
-    "loadingAuth": "ማረጋገጫን በመጫን ላይ...",
-    "loginRequiredTitle": "🚫 መግባት ያስፈልጋል",
-    "loginRequiredText": "እባክዎ የግብርና የአየር ንብረት አማካሪውን ለመጠቀም ይግቡ።",
-    "goToLogin": "ወደ መግቢያ ገጽ ይሂዱ",
-    "advisorTitle": "የግብርና የአየር ንብረት አማካሪ",
-    "advisorSubtitle": "ለእርሻዎ ለግል የተበጁ የአየር ሁኔታ ትንበያዎች እና የሰብል ምክሮችን ያግኙ።",
-    "fetchingAdvice": "ምክር በማምጣት ላይ...",
-    "getAdviceButton": "ለአካባቢያዬ ምክር ያግኙ",
-    "currentWeatherTitle": "አሁን ያለው የአየር ሁኔታ በ{{location}}",
-    "predictedAdviceTitle": "የተተነበየ ምክር",
-    "weatherForecastTitle": "የአየር ሁኔታ ትንበያ:",
-    "predictedSoilTitle": "የተተነበየ የአፈር አይነት:",
-    "suggestedCropsTitle": "የሚመከሩ ሰብሎች:",
-    "potentialEventsTitle": "ሊከሰቱ የሚችሉ ከባድ የአየር ሁኔታዎች:"
-  },
-  "cart": {
-    "title": "የግዢ ጋሪዎ",
-    "empty": "ጋሪዎ ባዶ ነው",
-    "emptyMessage": "ምንም ምርት ገና ወደ ጋሪዎ አላከሉም።",
-    "startShopping": "ግዢ ይጀምሩ",
-    "orderSummary": "የትዕዛዝ ማጠቃለያ",
-    "finalizeOrder": "ከመክፈልዎ በፊት ትዕዛዝዎን ያጠናቅቁ።",
-    "items": "እቃዎች ({{count}})",
-    "total": "ጠቅላላ",
-    "payWithChapa": "በቻፓ ይክፈሉ",
-    "continueShopping": "ግዢ ይቀጥሉ",
-    "itemPerItem": "ለእያንዳንዱ ዕቃ",
-    "chapaPaymentMessage": "ወደ ቻፓ ክፍያ በመሄድ ላይ። የእርስዎ የባክኤንድ ክፍያውን ይቆጣጠራል።"
-  },
-  "addToCart": "ወደ ጋሪ ጨምር",
-  "dashboard": {
-    "welcomeTitle": "🌱 ወደ አግሮሊንክ እንኳን ደህና መጡ",
-    "descriptionPart1": "አግሮሊንክ ዘመናዊ የግብርና ረዳትዎ ነው። ምርታማነትን፣ የውሳኔ አሰጣጥን እና የገበያ ተደራሽነትን ለማሻሻል አርሶ አደሮችን፣ ገዥዎችን እና ባለሙያዎችን በአንድ መድረክ ላይ እናገናኛለን።",
-    "descriptionPart2": "የአየር ሁኔታ ትንበያዎችን፣ የሰብል ምክሮችን እና የንግድ እድሎችን በአንድ ቦታ ያስሱ።"
-  },
   "soil-advicePage": {
     "hero": {
-      "title": "የእኛ አገልግሎቶች",
-      "subtitle": "ለበለጸገች ወደፊት ኢትዮጵያዊ ገበሬዎችን በአዳዲስ መሳሪያዎች እና ድጋፎች ማጎልበት።"
+      "title": "አገልግሎቶቻችን",
+      "subtitle": "የኢትዮጵያ ገበሬዎችን በፈጠራ መሳሪያዎች እና ድጋፍ ማብቃት ለዘላቂ የወደፊት ጊዜ።"
     },
     "solutions": {
-      "title": "ለእርስዎ የተዘጋጁ መፍትሄዎች",
-      "description": "እርሻዎን እንዲያስተዳድሩ፣ ምርታማነትን እንዲጨምሩ እና ከገበያ ጋር እንዲገናኙ የሚያግዙ የተለያዩ ዲጂታል አገልግሎቶችን እናቀርባለን።"
+      "title": "ለእርስዎ የተገነቡ መፍትሄዎች",
+      "description": "እርሻዎን ለማስተዳደር፣ ምርታማነትዎን ለመጨመር እና ከገበያ ጋር ለመገናኘት የሚያግዙ የዲጂታል አገልግሎቶችን እናቀርባለን።"
     },
     "serviceCards": [
       {
-        "title": "የበሽታ መለየት",
-        "description": "ጤናማ ምርት ለማረጋገጥ የሰብል በሽታዎችን በጊዜ ለመለየት እና ለህክምና ምክሮችን ለማግኘት የእኛን የላቁ መሳሪያዎች ይጠቀሙ።"
+        "title": "የበሽታ ማሳወቂያ",
+        "description": "የሰብል በሽታዎችን በጊዜ ለማወቅ እና ለሕክምና ምክሮችን ለማግኘት የምንሰጣቸውን ዘመናዊ መሳሪያዎች ተጠቀሙ፣ ጤናማ ምርት ያረጋግጡ።"
       },
       {
-        "title": "የምርት ገበያ ቦታ",
-        "description": "ከገዢዎች እና ሻጮች ጋር በቀጥታ ይገናኙ። የእርሻ ምርቶችዎን ይዘርዝሩ እና የሚፈልጉትን በቀላሉ እና ግልጽነት ባለው መንገድ ያግኙ።"
+        "title": "የምርት ገበያ",
+        "description": "ቀጥታ ከገዢዎች እና ከሻጮች ጋር ይገናኙ። የርሻ ምርቶችዎን ይዘርዝሩ እና የሚፈልጉትን በቀላሉ እና በግልጽ ያግኙ።"
       },
       {
         "title": "ትክክለኛ የአየር ሁኔታ ትንበያዎች",
-        "description": "ከመዝራት እስከ መሰብሰብ ያሉ የእርሻ ተግባሮችዎን ለማቀድ ወቅታዊ እና አካባቢያዊ የአየር ሁኔታ ትንበያዎችን ይቀበሉ።"
+        "description": "የርሻ ተግባሮችዎን ከመትከል እስከ መሰብሰብ ለማቀድ በጊዜው እና በአካባቢዎ የሚደረጉ የአየር ሁኔታ ትንበያዎችን ይቀበሉ።"
       },
       {
-        "title": "የግብርና መሣሪያዎች",
-        "description": "የእርሻ መሳሪያዎችን ለሽያጭ ወይም ለኪራይ ያግኙ ወይም ይዘርዝሩ። ቅልጥፍናን እና ምርታማነትን ለማሻሻል የሚያስፈልግዎትን ማሽነሪ ያግኙ።"
+        "title": "የርሻ መሳሪያዎች",
+        "description": "ለመሸጥ ወይም ለብድር የሚያገለግሉ የርሻ መሳሪያዎችን ያግኙ ወይም ይዘርዝሩ። ውጤታማነትዎን እና ምርታማነትዎን ለማሻሻል የሚያስፈልጉዎትን ማሽኖች ይድረሱ።"
       },
       {
-        "title": "የግብርና ሙያዊ እውቀት",
-        "description": "በምርጥ የእርሻ ዘዴዎች፣ የአፈር አያያዝ እና የሰብል ማሻሻል ላይ ምክር ለማግኘት የግብዓት ቤተ-መጽሐፍትን እና ባለሙያዎችን ያግኙ።"
+        "title": "የርሻ ባለሙያነት",
+        "description": "ለምርጥ የርሻ ልምዶች፣ የአፈር አስተዳደር እና የሰብል ማመቻቸት ምክር ለማግኘት የመርጃ ቤተ ክቡር እና ባለሙያዎችን ይድረሱ።"
       },
       {
-        "title": "የገበሬዎች ማህበረሰብ",
-        "description": "እውቀትን ለመካፈል፣ ተግዳሮቶችን ለመወያየት እና እርስ በርስ ለመረዳዳት የበለጸገ የገበሬዎች ማህበረሰብን ይቀላቀሉ።"
+        "title": "የገበሬ ማህበረሰብ",
+        "description": "እውቀት ለመጋራት፣ ተግዳሮቶችን ለመወያየት እና እርስ በርስ ለመርዳት በሚያስችል ተጨማሪ የገበሬ ማህበረሰብ ይቀላቀሉ።"
       }
     ],
     "cta": {
       "title": "ለመጀመር ዝግጁ ነዎት?",
-      "subtitle": "ዛሬ አግሮሊንክን ይቀላቀሉ እና የሚዘሩበትን መንገድ ይቀይሩ።",
+      "subtitle": "ዛሬ ወደ አግሮLink ይቀላቀሉ እና የርሻ መንገድዎን ይቀይሩ።",
       "button": "አሁን ይቀላቀሉ"
     }
   },
   "newsPage": {
     "hero": {
-      "title": "የግብርና ዜና እና የገበያ መረጃ",
-      "subtitle": "ስለ ግብርናው ዘርፍ የቅርብ ጊዜ መረጃዎችን እና የገበያ አዝማሚያዎችን ይከታተሉ።"
+      "title": "የርሻ ዜና እና የገበያ ግኝቶች",
+      "subtitle": "ከርሻ ዘርፍ እና የገበያ አዝማሚያዎች ከወጡ ዝመናዎች ጋር ይታወቁ።"
     },
     "marketPrices": {
-      "title": "ሳምንታዊ የገበያ ዋጋዎች",
-      "lastWeek": "ያለፈው ሳምንት የዋጋ ለውጦች።",
-      "priceUnit": "ETB"
+      "title": "የሳምንት ገበያ ዋጋዎች",
+      "lastWeek": "ባለፈው ሳምንት የዋጋ ለውጦች።",
+      "priceUnit": "ብር"
     },
     "latestNews": {
-      "title": "የቅርብ ጊዜ ዜናዎች",
+      "title": "የቅርብ ጊዜ ዜና",
       "readMore": "ተጨማሪ ያንብቡ",
       "articles": [
         {
-          "title": "ድርቅን የሚቋቋሙ አዳዲስ ሰብሎች ምርትን ይጨምራሉ",
-          "snippet": "ተመራማሪዎች አስቸጋሪ ሁኔታዎችን ለመቋቋም የተነደፉ አዳዲስ ዘሮችን በማስተዋወቅ በሰብል ሳይንስ ውስጥ አዲስ ግኝት ማግኘታቸውን አስታውቀዋል።"
+          "title": "ምርት ለማሳደግ አዲስ የድርቅ መቋቋም ሰብሎች",
+          "snippet": "ገለፃዎች በሰብል ሳይንስ ውስጥ አዲስ አላማ አሳውቀዋል፣ በተግዳሮት ሁኔታዎች ውስጥ ለማደግ የተነደፉ አዳዲስ ዘሮችን አስተዋውቀዋል።"
         },
         {
-          "title": "መንግስት ለአነስተኛ ገበሬዎች አዲስ ድጎማ አወጀ",
-          "snippet": "አዲስ ተነሳሽነት በመላ ሀገሪቱ የእርሻ ስራዎችን እና ምርታማነትን ለማሻሻል የገንዘብ ድጋፍ እና ሃብት ለማቅረብ ያለመ ነው።"
+          "title": "መንግስት ለትንንሽ ገበሬዎች አዲስ ዕገዛ አስታወቀ",
+          "snippet": "አዲስ ተቋቁሞ በሀገሪቱ ዙሪያ የርሻ ልምዶችን እና ምርታማነትን ለማሻሻል የገንዘብ ድጋፍ እና መርጃዎችን ለማቅረብ ያለመ ነው።"
         },
         {
-          "title": "በኢትዮጵያ የኦርጋኒክ ግብርና መነሳት",
-          "snippet": "በሸማቾች ፍላጎት እና በአካባቢያዊ ጥቅሞች የተነሳ ብዙ ገበሬዎች ኦርጋኒክ ዘዴዎችን እየተጠቀሙ ነው።"
+          "title": "የኦርጋኒክ ርሻ በኢትዮጵያ መጨመር",
+          "snippet": "ብዙ ገበሬዎች የሸማቾች ፍላጎት እና የአካባቢ ጥቅሞች ተነሳስተው ኦርጋኒክ ዘዴዎችን እየተጠቀሙ ነው።"
         },
         {
-          "title": "የአየር ሁኔታ መረጃ: ከባድ ዝናብ ይጠበቃል",
-          "snippet": "አንድ ኦፊሴላዊ ማስጠንቀቂያ በደቡባዊ ክልሎች ያሉ ገበሬዎች በቀጣይ ቀናት ሊከሰቱ ለሚችሉ የጎርፍ መጥለቅለቅ እንዲዘጋጁ ያስጠነቅቃል።"
+          "title": "የአየር ሁኔታ ማሳሰቢያ፡ ብዙ ዝናብ እንደሚዘንግ ትንበያ",
+          "snippet": "ይፋዊ ማሳሰቢያ በደቡባዊ ክልሎች ያሉ ገበሬዎችን በሚመጡት ቀናት ለሚከሰት የጎርፍ አደጋ እንዲያጋጥሙ አስጠንቅቋል።"
         }
       ]
     },
@@ -445,8 +439,25 @@
       "wheat": "ስንዴ",
       "coffee": "ቡና",
       "teff": "ጤፍ",
-      "maize": "በቆሎ",
+      "maize": "ገብስ",
       "sesame": "ሰሊጥ"
     }
+  },
+  "adminDashboard": {
+    "title": "አዲስ አስተዳዳሪ ይፍጠሩ",
+    "description": "አዲስ አስተዳዳሪ መለያ ለመፍጠር ከታች ያለውን ቅጽ ይሙሉ።",
+    "nameLabel": "ሙሉ ስም",
+    "namePlaceholder": "ሙሉ ስም ያስገቡ",
+    "emailLabel": "ኢሜይል አድራሻ",
+    "emailPlaceholder": "ኢሜይል አድራሻ ያስገቡ",
+    "phoneLabel": "ስልክ ቁጥር",
+    "phonePlaceholder": "ስልክ ቁጥር ያስገቡ",
+    "passwordLabel": "የይለፍ ቃል",
+    "passwordPlaceholder": "የይለፍ ቃል ያስገቡ",
+    "createAdminButton": "አስተዳዳሪ ይፍጠሩ",
+    "logoutButton": "ውጣ",
+    "successMessage": "የአስተዳዳሪ መለያ በተሳካ ሁኔታ ተፈጥሯል!",
+    "failedMessage": "የአስተዳዳሪ መለያ መፍጠር አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+    "networkError": "የኔትወርክ ስህተት። እባክዎ ግንኙነትዎን ያረጋግጡ እና እንደገና ይሞክሩ።"
   }
 }
