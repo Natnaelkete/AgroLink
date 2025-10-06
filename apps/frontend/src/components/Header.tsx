@@ -137,7 +137,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
             </Link>
 
             {/* Main navigation links */}
-            <nav className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 gap-32 lg:gap-8">
+        <nav className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 gap-12 lg:gap-16">
               {/* Show different navigation based on authentication status */}
               {!isUserAuthenticated ? (
                 // PUBLIC NAVIGATION - Show when NOT authenticated
