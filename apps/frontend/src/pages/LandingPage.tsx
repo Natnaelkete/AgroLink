@@ -464,7 +464,6 @@ const LandingPage = () => {
                     {t('contact.form.message')}
                   </label>
                   <textarea 
-                    rows="5"
                     className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl focus:outline-none focus:border-green-400 transition-colors duration-300 resize-none"
                     placeholder={t('contact.form.messagePlaceholder')}
                   ></textarea>

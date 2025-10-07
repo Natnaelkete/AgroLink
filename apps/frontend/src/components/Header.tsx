@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { cartCount } = useCart(); 
-  const { isAuthenticated, signOut, user, loading } = useAuth();
+  const { isAuthenticated, signOut, loading } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");

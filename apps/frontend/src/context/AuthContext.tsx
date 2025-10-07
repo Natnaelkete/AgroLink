@@ -35,7 +35,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         
         if (storedToken && storedUserId) {
           setToken(storedToken);
-          setUserId(stUserId);
+          setUserId(storedUserId); // FIXED: Add this line
           console.log('Auth initialized with token');
         } else {
           console.log('No auth token found');
@@ -53,7 +53,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const setAuth = (newToken: string, newUserId: string) => {
     console.log('Setting auth:', { newToken: !!newToken, newUserId });
     setToken(newToken);
-    setUserId(newUserId);
+    setUserId(newUserId); // FIXED: Add this line
     localStorage.setItem('authToken', newToken);
     localStorage.setItem('user-id', newUserId);
   };
